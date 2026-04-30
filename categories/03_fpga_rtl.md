@@ -35,6 +35,7 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 | 23 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | Set-top boxes, cable modems, Wi-Fi gateways &mdash; the actual current occupant at the old Pace site. Some FPGA work remains on home-networking platforms. |
 | 23b | **Synamedia** (ex-Cisco Video / NDS) | Staines-upon-Thames (no Yorkshire site) | Video headend, encoders &mdash; a *separate* company from CommScope/Pace, often confused. |
 | 23c | **Calrec Audio** (Audiotonix) | **Hebden Bridge** (Nutclough Mill) | Live-broadcast audio mixing console FPGA / DSP &mdash; Argo, Type R, ImPulse1 ST2110. |
+| 23d | **Curvalux** | **Sheffield** (Electric Works, Sheaf St) + planned £20M factory near **AMRC Rotherham** | Software-defined, multi-beam phased-array antenna FPGA for solar-efficient fixed-wireless-access broadband (sub-7 GHz Wi-Fi 6E, moving to mmWave). FPGA-heavy. ~17 staff April 2026, growing on £8M SCR R&amp;D grant. Direct FPGA + RF + DSP fit, ~40 min from Leeds. [curvalux.com/careers](https://curvalux.com/careers/) |
 | 24 | **Sony Europe B2B / Professional Solutions** | Basingstoke, Pencoed | Broadcast cameras, IP video |
 | 25 | **XMOS** | Bristol | xcore audio/AIoT SoC |
 | 26 | **Cambridge Consultants / TTP / Sagentia / Plextek / PA** | Cambridge cluster | Consultancy — medical, IoT, industrial FPGA |
@@ -52,6 +53,7 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 | **Greater Manchester** | 350–450 | ~25 | BAE Warton-adjacent, MBDA Bolton, Raytheon Manchester, Arm Manchester, Thales Cheadle, Roke MCR, BBC R&D Salford |
 | **Sheffield / S. Yorks** | 80–120 | ~6–8 | Arm Sheffield, AESSEAL/specialist SMEs |
 | **Leeds / W. Yorks** | 100–150 | ~8–10 | Blaize Leeds, **CommScope (ex-Pace) Saltaire**, **Calrec Audio (Hebden Bridge)**, Rockley/medical, defence SMEs |
+| **Sheffield / S. Yorks** (revised) | 120–180 | ~10–14 | Arm Sheffield, **EnSilica Sheffield**, **Curvalux (Electric Works + AMRC Rotherham)**, AESSEAL, specialist SMEs |
 | **Reading / Thames Valley** | 500 | ~30 | Thales, Cisco, Microsoft, Rohde & Schwarz |
 | **Hampshire** (Romsey/Soton) | 400 | ~25 | Roke, AccelerComm, IBM Hursley |
 | **Rochester / Kent / Essex** | 500 | ~30 | BAE Rochester, Leonardo Basildon |
@@ -67,6 +69,7 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 - **BBC R&D Salford** — 25–30 R&D engineers; occasional FPGA roles for live IP video / UHD; very high cultural fit given Pace/broadcast background.
 - **CommScope at Salts Mill, Saltaire** — the actual successor to Pace plc (Pace &rarr; Arris &rarr; CommScope); intermittent FPGA hiring for video pipeline / home-networking work. *Synamedia is a separate company at Staines and has no Yorkshire site.*
 - **Calrec Audio, Hebden Bridge** — live-broadcast audio mixing consoles; FPGA / DSP work on the Argo / Type R / ImPulse1 platforms.
+- **Curvalux, Sheffield (Electric Works) + AMRC Rotherham** — solar-efficient fixed-wireless-access broadband; software-defined multi-beam phased-array antennas, FPGA-heavy, moving from Wi-Fi 6E into mmWave. £8M SCR Mayoral Combined Authority R&D grant; £20M Rotherham factory planned. Small (~17) but growing. Excellent FPGA + RF + DSP + power fit.
 
 Realistic verdict: **8–12 live FPGA roles** across Yorkshire+GM at any moment. The pragmatic strategy is **UK-remote southern primes** (BAE, Leonardo, MBDA Stevenage, AMD, Picocom, AccelerComm) plus the Bolton/Cheadle/Manchester cluster.
 

@@ -38,6 +38,7 @@ For a Staff-level Zynq-UltraScale+ / Petalinux / Buildroot / kernel-driver engin
 | 23 | **ByteSnap Design** | Birmingham, remote | Embedded Linux/Yocto consultancy, BSPs |
 | 24 | **Witekio (Avnet)** | Reading, remote | Linux/Android BSP consultancy |
 | 25 | **2net (Embedded)** | Sheffield | Embedded Linux consultancy, Buildroot/Yocto |
+| 26 | **Curvalux** | **Sheffield (Electric Works) + planned AMRC Rotherham factory** | Embedded Linux on phased-array fixed-wireless edge nodes; FPGA + ARM SoC + RTOS / kernel work. ~17 staff April 2026, scaling on £8M SCR grant. Direct local fit (~40 min from Leeds). [curvalux.com](https://curvalux.com/) |
 
 Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley — pro-audio embedded), **BBC R&D** (Salford MediaCity), **Saga Robotics** (York — Thorvald ag-robot Linux), **Cobham Ultra** (Cheltenham), **MBDA** (Stevenage/Bristol), **Nokia / Ericsson** (Bristol/Reading — 5G base-station Linux), **Liberty Global / VMO2** (Bradford, Reading — Connect Box / RDK), **Pulsiv** (Plymouth — power-electronics firmware), **Ubisense** (Cambridge), **Bosch / Five.ai** (Cambridge — AV).
 
@@ -52,7 +53,7 @@ Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley —
 | London / Thames Valley | 8 | Canonical, Sky Osterley, Wayve, Synamedia Staines, AWS, Witekio Reading |
 | Edinburgh / Scotland | 6 | AMD Edinburgh, Leonardo, Sky Livingston, Codeplay (Intel) |
 | Belfast / NI | 5 | Arm Belfast, Allstate (less embedded) |
-| **South Yorkshire** (Sheffield) | **5** | **2net**, Arm Sheffield, McLaren Applied (close) |
+| **South Yorkshire** (Sheffield / Rotherham) | **6** | **2net**, Arm Sheffield, **Curvalux (Electric Works + AMRC Rotherham)**, **EnSilica Sheffield**, McLaren Applied (close) |
 | West Midlands (Birmingham/Coventry) | 7 | ByteSnap, JLR Gaydon/Whitley, Siemens, Aston Martin |
 | Cheltenham / Malvern | 6 | QinetiQ, Cobham Ultra, GCHQ-adjacent, Spirent |
 | **Hull / York** | **5** | **Smith+Nephew (Hull)**, **Saga Robotics (York)**, **Renishaw York** |

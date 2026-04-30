@@ -39,6 +39,7 @@ A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/
 | 23 | **Thales UK** | Crawley, Templecombe, Reading | Sonar, radar, secure comms |
 | 24 | **Cobham Ultra (Sonar)** | Greenford, Cheltenham, Weymouth | Sonar DSP, ASW |
 | 25 | **Smith+Nephew** | **Hull** + Melton (new, $100M+, under construction); Andover | Advanced Wound Management R&D Centre of Excellence — signal processing, imaging, chemistry. *York site closed 2016.* |
+| 26 | **Curvalux** | **Sheffield** + planned AMRC Rotherham facility | Software-defined multi-beam phased-array antenna DSP for fixed-wireless broadband (Wi-Fi 6E, mmWave); FPGA-based beamforming. Comms-PHY-adjacent and a strong DSP / signal-processing fit. ~40 min from Leeds. [curvalux.com](https://curvalux.com/) |
 
 Honourable mentions hiring in April 2026: **Keysight (S. Queensferry / Winnersh)** test-instrument DSP; **Spirent (Crawley/Paignton)** protocol+PHY test; **MaxLinear UK (Belfast/Cambridge)** broadband PHY; **u-blox UK (Reigate/Cambridge)** GNSS/cellular; **CMR Surgical (Cambridge)** robotic-surgery sensor fusion; **GE HealthCare (Amersham)** imaging; **dCS Audio (Cambridge)**, **Linn (Glasgow)**, **Meridian (Huntingdon)**, **Audient (Hants)**; **V-Nova (London)** video codecs; **Grass Valley UK** (Newbury, much-reduced); **Red Bee Media (Bracknell)** broadcast playout.
 
@@ -67,6 +68,7 @@ This arc is genuinely strong and under-rated nationally:
 - **BBC R&D, MediaCityUK Salford** — audio codec, immersive sound (ADM, MPEG-H), 5G broadcast trials. Small team, very high-fit; periodic openings.
 - **AMS Neve, Burnley** — iconic pro-audio; small DSP/FPGA team building 88RS, Genesys, converters. Rare openings but a perfect cultural fit.
 - **Smith+Nephew, Hull** — Advanced Wound Management R&D Centre of Excellence; signal processing, imaging, chemistry. New $100M+ Melton facility under construction. *York site closed 2016.*
+- **Curvalux, Sheffield + AMRC Rotherham** — phased-array antenna DSP for solar-efficient fixed-wireless broadband; FPGA-based beamforming. Comms-PHY-adjacent and a direct DSP / FPGA / RF fit ~40 min from Leeds. Scaling on £8M SCR R&D grant.
 - **Roke (Manchester satellite)** and **BAE Systems Manchester** — defence DSP, growing post-AUKUS Pillar-2.
 - **dock10 / ITV Studios Salford** — broadcast operations; engineering roles less DSP-heavy but adjacent.
 - Adjacent: **NPL North** (Huddersfield outpost via Univ. of Huddersfield acoustics group), **University of Salford acoustics**.
