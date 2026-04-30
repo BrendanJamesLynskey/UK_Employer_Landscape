@@ -128,3 +128,38 @@ Honest picture:
 - <https://www.synamedia.com/careers/>
 - <https://www.linkedin.com/jobs/search/?keywords=signal%20integrity&location=United%20Kingdom>
 - <https://www.ukesf.org/>
+
+---
+
+## Wave-5 additions — Yorkshire / NE power-electronics, hydrogen, defence-adjacent, scientific instruments (April 2026)
+
+A follow-up sweep surfaced several high-fit power-electronics / multiphase-DCDC employers within ~1 h of Leeds, plus the UK's national-instruments tier.
+
+### Yorkshire / North-East power & RF
+- **ITM Power** — Sheffield (~40 min); kV-scale multiphase DCDC for hydrogen electrolysers; ~80 engineers across Power Electronics, Controls, Embedded SW; growing rapidly. **The strongest local multiphase-power fit identified to date.**
+- **Faradion** (Reliance) — Sheffield; sodium-ion BMS + cell engineering; ~200-hire growth plan.
+- **Rolls-Royce SMR** — Sheffield; reactor C&I, safety-grade power & control electronics.
+- **Drax** — Selby (~30 min east of Leeds); generation control, BESS integration, C&I engineer roles.
+- **CSA Catapult** — Sedgefield NETPark (~1 h 45); compound-semiconductor RF + power-electronics applications centre, GaN/SiC inverters and PA work.
+- **Filtronic** — Sedgefield + Cambridge SP (already listed) — *now also* with confirmed PA/RF hardware-engineering openings April 2026.
+- **AMETEK Land** — Dronfield (~30 mi); high-temp IR pyrometry, mixed-signal HW, integrated FPGA + analogue-front-end design.
+- **Tracerco** — Billingham; industrial radiometric instrumentation, mixed-signal HW.
+- **Forsberg Services** — Heysham; GNSS/INS hardware, RF + multiphase aux rails.
+- **Northern Powergrid** — Yorkshire/NE; grid-scale protection electronics, less classical-board-design but power-system relevant.
+
+### Scientific instruments tier (national-grade SI/PI/Power roles)
+- **Diamond Light Source** — Harwell (Oxon); accelerator/beamline control electronics, multiphase rails, FPGA + analogue. Multiple hardware roles open April 2026.
+- **STFC (Daresbury + RAL)** — Daresbury (~70 mi from Leeds, ~1 h 30 M62) and Harwell; instrumentation electronics.
+- **NPL** — Teddington + Huddersfield outpost; atomic-clock / quantum-control electronics.
+- **Gooch & Housego** — Ilminster + Torquay; photonics, acousto-optic & electro-optic modulators — RF + analogue HW.
+- **Servomex** — Crowborough; gas-analysis instruments; live *V&V Engineer* role April 2026.
+- **Pickering Interfaces** — Clacton-on-Sea; PXI / LXI switching HW, FPGA + analogue.
+- **AimTTi** — Huntingdon; lab power supplies, function generators, source-meters — direct multiphase-DCDC fit.
+- **Bruker UK** — Coventry / Banner Lane; analytical instruments.
+- **Coherent UK** — Glasgow; lasers, photonics drives.
+- **HBK / Brüel & Kjær** — Cambridge area; vibration/acoustic measurement HW.
+
+### Motorsport HPP power electronics (see Cat 09 for full writeup)
+- **McLaren Applied** (Woking), **Mercedes HPP** (Brixworth), **Red Bull Powertrains** (Milton Keynes), **WAE / Fortescue** (Grove), **YASA / Mercedes** (Yarnton), **Cosworth Electronics** (Cambridge), **Bentley** (Crewe — closest to Leeds, ~80 mi), **Drive System Design** (Leamington), **Mahle Powertrain** (Northampton).
+
+ITM Power Sheffield, AMETEK Land Dronfield, and Hitachi Rail Newton Aycliffe are the three strongest *new* in-region power-electronics employers from this sweep. Diamond Light Source, AimTTi, and Pickering Interfaces are the strongest national instruments-tier finds.

@@ -106,3 +106,30 @@ Realistic verdict: **8–12 live FPGA roles** across Yorkshire+GM at any moment.
 - <https://www.linkedin.com/jobs/search/?keywords=FPGA&location=United%20Kingdom>
 - <https://www.icresources.com/>
 - <https://www.vividresourcing.com/>
+
+---
+
+## Wave-5 additions — Yorkshire / NE deep tech, audio, motorsport, instruments (April 2026)
+
+These are FPGA / RTL hires identified in a follow-up sweep — particularly strong on the Yorkshire / North-East / Cheshire arc.
+
+### Yorkshire / North-East FPGA hires
+- **Hitachi Rail** — Newton Aycliffe (production) + Manchester (signalling R&D); safety-critical SIL-4 ETCS / CBTC FPGA work, AUTOSAR, MISRA-C. Newton Aycliffe is ~1 h drive from Leeds.
+- **Siemens Mobility** — **Goole** (~1 h from Leeds, ramping to 1,000 jobs by 2030); rolling-stock FPGA-based control / TCMS / signalling.
+- **Tharsus** — Blyth (Northumberland); robotics integrator (Ocado bots, Modelon AGVs); FPGA + RT control + custom electronics.
+- **Tracerco** — Billingham (Teesside); industrial radiometric instrumentation, embedded FPGA. Live April 2026 *Embedded Software Engineer* role.
+- **Rolls-Royce SMR** — Sheffield HQ; reactor I&C, safety-rated digital electronics.
+- **AMETEK Land** — Dronfield (~30 mi south of Leeds); IR pyrometry / process imaging; FPGA image-processing pipelines.
+- **CSA Catapult** — Sedgefield NETPark + Newport; GaN/SiC RF + power electronics; FPGA digital control loops.
+- **BAE Systems Air** — Warton + Samlesbury (~1 h 45 from Leeds); EW / DASS / radar FPGA (clearance required).
+- **Forsberg Services** — Heysham; GNSS/INS for marine and defence; FPGA receivers.
+
+### Audio / motorsport / instruments crossover
+- **DiGiCo / Audiotonix** — Chessington (Surrey); sister brand of Calrec under Audiotonix; live April 2026 *FPGA Audio Engineer* role for Quantum 7 / 852 console DSP.
+- **McLaren Applied** — Woking; live *FPGA Designer (Vivado / SystemVerilog)* for motorsport ECUs — see Cat 09.
+- **Pickering Interfaces** — Clacton-on-Sea; FPGA-based PXI / LXI switching — niche but active hiring.
+- **Diamond Light Source** — Harwell; multiple FPGA / firmware roles for synchrotron beamline control electronics.
+- **STFC Daresbury** (~70 mi from Leeds, ~1 h 30 M62) — accelerator physics, control electronics; periodic FPGA roles.
+- **NPL Huddersfield outpost** + Teddington — atomic-clock and quantum-control electronics; FPGA roles tied to specific programmes.
+
+These are mostly *additive* to the main table — Hitachi Rail Newton Aycliffe and Siemens Mobility Goole are the strongest in-region adds for a non-defence, non-clearance FPGA path.

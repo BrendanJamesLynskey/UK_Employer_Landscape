@@ -129,3 +129,38 @@ This corridor is the **highest-leverage** target set:
 - <https://uk.linkedin.com/jobs>
 - <https://www.indeed.co.uk>
 - <https://www.cwjobs.co.uk>
+
+---
+
+## Wave-5 additions — Yorkshire / NE deep tech, audio, motorsport, instruments (April 2026)
+
+Several new in-region embedded-Linux employers identified in a follow-up sweep:
+
+### Yorkshire / North-East / Cheshire
+- **Hitachi Rail** — Newton Aycliffe (production) + Manchester (R&D); train-control Linux + RTOS, AUTOSAR, MISRA-C, SIL-4. ~1 h drive from Leeds.
+- **Siemens Mobility** — Goole (~1 h, ramping to 1,000 jobs by 2030); rolling-stock TCMS, embedded Linux on signalling and control.
+- **Tharsus** — Blyth (Northumberland); robotics integrator (Ocado, Modelon AGVs); Linux on Zynq + ROS-2.
+- **Tracerco** — Billingham (Teesside); industrial radiometric instrumentation — live April 2026 *Embedded Software Engineer* role.
+- **Rolls-Royce SMR** — Sheffield; reactor C&I embedded SW (safety-rated).
+- **ITM Power** — Sheffield (~40 min); hydrogen electrolyser controls — embedded SW on real-time Linux + safety PLCs.
+- **CSA Catapult** — Sedgefield NETPark; GaN/SiC test-rig embedded.
+- **Drax** — Selby; control-system engineering (less classical-Linux, but adjacent).
+- **AMETEK Land** — Dronfield; embedded Linux on IR pyrometry products.
+- **Bentley Motors** — Crewe (~1 h 30); IVI Linux, ADAS, EV powertrain embedded — closest motorsport-adjacent OEM (see Cat 09).
+
+### Audio / DSP embedded
+- **Naim Audio** — Salisbury; *Embedded Software Engineer*, *Embedded SW Team Lead* live April 2026 — embedded Linux on streamers, RT control on amplifiers.
+- **DiGiCo (Audiotonix)** — Chessington; embedded Linux on console control surfaces.
+- **Sonos UK** — London; embedded Linux on speakers, sync + voice.
+- **Calrec Audio** — Hebden Bridge (already listed) — embedded Linux on console processors.
+
+### Scientific instruments embedded
+- **Diamond Light Source** — Harwell; multiple Linux + RT control roles April 2026.
+- **STFC Daresbury** — accelerator control SW.
+- **AimTTi** — Huntingdon; embedded firmware on lab instruments.
+- **Pickering Interfaces** — Clacton; firmware for PXI/LXI switching.
+
+### Motorsport HPP embedded (see Cat 09)
+- **McLaren Applied** (Woking — *Principal Embedded SW Engineer* live), **Mercedes HPP** (Brixworth), **Red Bull Powertrains** (Milton Keynes), **Cosworth Electronics** (Cambridge), **WAE / Fortescue** (Grove), **YASA** (Yarnton).
+
+The most consequential in-region adds are **Hitachi Rail Newton Aycliffe**, **Siemens Mobility Goole**, **ITM Power Sheffield**, and **Bentley Crewe** — each is non-defence, non-clearance, and within a viable commute or hybrid pattern from Leeds.

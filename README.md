@@ -1,6 +1,6 @@
 # UK Employer Landscape — Multidisciplinary Engineer (April 2026)
 
-A research-backed map of employers across **eight job categories** matching a Staff-level multidisciplinary engineering profile (HW · Power · FPGA · DSP · LLM · Agents · Python). Built around a Leeds base with a stated preference for **Yorkshire / Greater Manchester / UK-remote** roles. Six categories cover on-shore UK employers; the seventh covers fully-remote and international AI labs that hire UK residents; the eighth covers the UK Space / NewSpace and Quantum Computing HW sectors.
+A research-backed map of employers across **nine job categories** matching a Staff-level multidisciplinary engineering profile (HW · Power · FPGA · DSP · LLM · Agents · Python). Built around a Leeds base with a stated preference for **Yorkshire / Greater Manchester / UK-remote** roles. Six categories cover on-shore UK employers across the core skill axes; the seventh covers fully-remote and international AI labs that hire UK residents; the eighth covers the UK Space / NewSpace and Quantum Computing HW sectors; the ninth covers Motorsport / High-Performance Powertrain / EV-drives.
 
 ## ▶ [Open the live site](https://brendanjameslynskey.github.io/UK_Employer_Landscape/)
 
@@ -22,6 +22,7 @@ The landing page includes an **interactive UK heatmap** (city dots positioned by
 | 06 | Embedded Systems · Linux · Firmware | Codethink · CommScope (ex-Pace) Saltaire · Sky Leeds · Arm · AMD Versal · Collabora · Foundries.io · Canonical · 2net Sheffield · ByteSnap · CMR Surgical · JLR SDV · Renishaw York | [`categories/06_embedded_linux.md`](categories/06_embedded_linux.md) |
 | 07 | Pure Remote · International Employers | Anthropic · Hugging Face · Mistral · Cohere · LangChain · Together AI · Modal · Cerebras · Groq · Tenstorrent · Canonical · Collabora · Foundries.io · Cloudflare · GitLab · Sourcegraph · Replicate · Aiven · Chainguard | [`categories/07_remote_international.md`](categories/07_remote_international.md) |
 | 08 | UK Space / NewSpace & Quantum Computing HW | SSTL · Airbus DS Stevenage · Astroscale Harwell · Open Cosmos · In-Space Missions (BAE) · Spire · AAC Clyde Space · SpaceForge · Goonhilly · RAL Space · Nammo Westcott · **Riverlane** · Quantinuum · OQC · Quantum Motion · ORCA · Universal Quantum · Oxford Ionics · Infleqtion · PsiQuantum Daresbury · **Aegiq Sheffield** · M Squared · NQCC | [`categories/08_space_quantum.md`](categories/08_space_quantum.md) |
+| 09 | Motorsport · HPP · Auto Powertrain | **McLaren Applied** · Mercedes-AMG HPP Brixworth · Red Bull Powertrains · Aston Martin F1 · Williams/WAE · Cosworth · YASA · Ricardo · **Bentley Crewe** · Lotus · Mahle · Drive System Design · Gordon Murray · Prodrive · JLR Manchester SDV | [`categories/09_motorsport_hpp.md`](categories/09_motorsport_hpp.md) |
 
 ---
 
@@ -40,7 +41,8 @@ UK_Employer_Landscape/
     ├── 05_dsp_audio_broadcast.md
     ├── 06_embedded_linux.md
     ├── 07_remote_international.md
-    └── 08_space_quantum.md
+    ├── 08_space_quantum.md
+    └── 09_motorsport_hpp.md
 ```
 
 Each category writeup contains: summary · top-employers table (15–30 rows with locations) · regional concentration table · Yorkshire & Greater Manchester focus · live job-posting estimates · notes & caveats · sources (URLs).
@@ -61,10 +63,11 @@ Each category writeup contains: summary · top-employers table (15–30 rows wit
 
 (Distilled from all six writeups, weighted by Leeds location preference.)
 
-- **S-tier:** **CommScope (ex-Pace) Salts Mill, Saltaire** · **Calrec Audio (Hebden Bridge)** · **Curvalux (Sheffield Electric Works + AMRC Rotherham)** · Codethink (Manchester) · Sky Leeds · Arm Manchester/Sheffield · Blaize (current)
-- **A-tier:** BBC R&D Salford · Peak · AutoTrader · AMD ex-Xilinx (Cambridge/Edinburgh) · MBDA Bolton · Thales Cheadle Heath · Smith+Nephew (Hull) · Saga Robotics (York) · AMS Neve (Burnley) · **EnSilica (Sheffield + Cambridge SP)** · **Filtronic (Cambridge SP + Sedgefield)**
-- **B-tier (UK-remote):** Hugging Face · Anthropic · Mistral · Cohere · LangChain · Together AI · Modal · Cerebras · Groq · Tenstorrent · Faculty AI · Quantexa · Cambridge Consultants / TTP / Sagentia / Plextek / PA · Renishaw (York) · 2net (Sheffield) · ByteSnap (Birmingham) · Witekio · Foundries.io · Collabora · Canonical · Cloudflare · Diodes Zetex (Oldham)
+- **S-tier (in-region or strongest 1:1):** **CommScope (ex-Pace) Salts Mill, Saltaire** · **Calrec Audio (Hebden Bridge)** · **Curvalux (Sheffield Electric Works + AMRC Rotherham)** · Codethink (Manchester) · Sky Leeds · Arm Manchester/Sheffield · Blaize (current) · **Naim Audio (Salisbury — multiple live audio-DSP/embedded roles)** · **McLaren Applied (Woking — closest 1:1 HW+FPGA+embedded+power match on the UK map)**
+- **A-tier:** BBC R&D Salford · Peak · AutoTrader · AMD ex-Xilinx (Cambridge/Edinburgh) · MBDA Bolton · Thales Cheadle Heath · Smith+Nephew (Hull) · Saga Robotics (York) · AMS Neve (Burnley) · **EnSilica (Sheffield + Cambridge SP)** · **Filtronic (Cambridge SP + Sedgefield)** · **ITM Power (Sheffield — multiphase DCDC for hydrogen)** · **Hitachi Rail (Newton Aycliffe + Manchester — SIL-4 FPGA)** · **Siemens Mobility (Goole — ramping to 1,000 jobs)** · **AMETEK Land (Dronfield — IR pyrometry FPGA, ~30 mi)** · **Bentley Crewe (BEV programme)** · **Diamond Light Source (Harwell)** · **DiGiCo / Audiotonix (Chessington — live FPGA Audio Engineer)** · Cosworth Electronics (Cambridge) · YASA (Yarnton) · WAE / Fortescue (Grove) · Tharsus (Blyth) · Tracerco (Billingham) · Rolls-Royce SMR (Sheffield) · Faradion (Sheffield) · CSA Catapult (Sedgefield NETPark)
+- **B-tier (UK-remote):** Hugging Face · Anthropic · Mistral · Cohere · LangChain · Together AI · Modal · Cerebras · Groq · Tenstorrent · Faculty AI · Quantexa · Cambridge Consultants / TTP / Sagentia / Plextek / PA · Renishaw (York) · 2net (Sheffield) · ByteSnap (Birmingham) · Witekio · Foundries.io · Collabora · Canonical · Cloudflare · Diodes Zetex (Oldham) · Sonos UK · Allen & Heath · Chord · Prism · CEDAR · Pickering Interfaces · AimTTi · Servomex · Gooch & Housego
 - **Space / Quantum (Leeds-relevant):** **Aegiq (Sheffield, ~40 min)** · PsiQuantum (Daresbury, ~75 min) · Riverlane (Cambridge, UK-remote-friendly FPGA) · Quantum Motion (London, UK-remote-friendly control electronics) · Filtronic Sedgefield (RF, space-adjacent) — the realistic northern shortlist before considering relocation to Harwell / Glasgow / Stevenage.
+- **Motorsport / HPP (mostly relocate / hybrid):** McLaren Applied (Woking, S-tier above) · Mercedes-AMG HPP Brixworth · Red Bull Powertrains (Milton Keynes) · Aston Martin F1 (Silverstone) · WAE Grove · Cosworth Electronics (Cambridge) · YASA (Yarnton) · Bentley Crewe (A-tier, ~80 mi from Leeds) · JLR Manchester SDV (~1 h).
 
 ---
 

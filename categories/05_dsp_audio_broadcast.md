@@ -117,3 +117,35 @@ Net: 4–6 high-fit employers within ~60-min commute, plus another 8–10 within
 - <https://careers.keysight.com>
 - <https://www.spirent.com/company/careers>
 - <https://www.linkedin.com/jobs/>
+
+---
+
+## Wave-5 additions — UK audio specialists, broadcast, instruments (April 2026)
+
+A focused follow-up sweep surfaced several British audio / DSP companies that the initial pass missed — particularly important because each is a near-perfect cultural fit for a senior audio-DSP MSc background.
+
+### UK audio specialists actively hiring
+- **Naim Audio** — Salisbury; high-end audio streaming/amplification (Mu-so, Uniti, Statement). Owned by VerVent (ex-Focal-Naim Group). **Multiple live roles April 2026: Embedded Software Engineer, DSP Software Engineer, Senior Electronics Engineer, Embedded SW Team Lead.** Direct 1:1 fit; strongest single audio-DSP find of the sweep.
+- **DiGiCo (Audiotonix)** — Chessington (Surrey); live-sound digital mixing consoles (Quantum 7, SD12, S31). Sister brand of Calrec under Audiotonix. **Live April 2026: FPGA Audio Engineer.**
+- **Sonos UK** — London; smart speakers, voice DSP, room correction, multi-room sync. Hybrid 3 days/week. Senior DSP Engineer + Senior Audio Software Engineer roles steady through Q1 2026.
+- **Allen & Heath** — Penryn (Cornwall); live + install mixing consoles (dLive, SQ, Avantis). Live *Audio / DSP Engineer* role.
+- **CEDAR Audio** — Cambridge; audio restoration / forensic / broadcast — ex-Cambridge dSP Audio. Niche but iconic; small team.
+- **Prism Sound** — Cambridge; pro-audio converters and ADCs.
+- **Chord Electronics** — Maidstone; custom-FPGA DACs (Mojo, Hugo, DAVE) — Robert Watts' bespoke pulse-array DSP architectures. Tight FPGA + audio DSP fit, very small team.
+- **ROLI** — London; haptic/touch instruments — DSP roles when they hire.
+- **Cambridge Audio** — London (HQ); Hi-Fi streaming / amplification.
+- **dCS (data Conversion Systems)** — Cambridge; ultra-high-end DACs (Vivaldi, Bartók); FPGA-based Ring DAC topology.
+- **Linn Products** — Glasgow; high-end streaming & turntables, DSP-based room correction (Space Optimisation).
+- **Meridian Audio** — Huntingdon; pioneers of MQA, DSP-based loudspeakers.
+
+### Naim Audio — strongest Wave-5 audio find
+
+Naim runs a tight UK design-and-build operation in Salisbury (Hampshire) — every flagship product (Statement amp, NDX 2 streamer, Uniti Atom HE) is an FPGA + ARM-Linux + multiphase analogue design. They have been the most consistent UK pro-audio hirer through Q1 2026, with at least four senior roles open continuously. Worth a direct application, with travel pattern probably **3 days/week Salisbury + 2 days remote**.
+
+### Broadcast / instruments adjacent
+- **AMETEK Land** — Dronfield (~30 mi south of Leeds); IR pyrometry / process imaging — DSP image-processing pipelines.
+- **Diamond Light Source** — Harwell; beamline detector electronics — periodic DSP hires.
+- **NPL Huddersfield outpost** — quantum-clock / acoustic standards; ad-hoc DSP roles.
+- **Servomex** — Crowborough; gas-analysis DSP.
+
+ITM Power Sheffield, Hitachi Rail Newton Aycliffe, and Drax Selby (cat-04 / cat-06 entries) also have signal-processing-adjacent control roles for a DSP background, even though they are not classical audio/broadcast companies.
