@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Employer Landscape — Multidisciplinary Engineer · April 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-card: #0d1117;
+            --bg-code: #161b22;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --text-dim: #6e7681;
+            --accent: #f59e0b;
+            --accent-2: #fbbf24;
+            --accent-dim: #f59e0b44;
+            --accent-glow: #f59e0b22;
+            --border: #21262d;
+            --border-strong: #30363d;
+            --good: #76B900;
+            --warn: #ef4444;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+            --font-body: 'Inter', sans-serif;
+            --max-width: 1100px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+        a { color: var(--accent-2); text-decoration: none; transition: color 0.15s; }
+        a:hover { color: var(--accent); }
+
+        /* ── Hero ── */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hero > * { position: relative; z-index: 1; }
+        .series-label {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+            max-width: 900px;
+        }
+        .hero h1 .accent { color: var(--accent); }
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin-bottom: 2rem;
+        }
+        .hero-meta {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            border: 1px solid var(--border);
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            background: var(--bg-card);
+        }
+
+        /* ── Section frame ── */
+        section {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.1rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+        h2::before {
+            content: '◈';
+            color: var(--accent);
+            font-size: 1rem;
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.6rem 0 0.6rem;
+            color: var(--text-primary);
+        }
+        p { margin-bottom: 1rem; color: var(--text-secondary); }
+        section > p:first-of-type { color: var(--text-secondary); margin-top: 0.5rem; max-width: 800px; }
+
+        /* ── Tables ── */
+        .table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+        th, td {
+            padding: 0.65rem 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        th {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--accent);
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-strong);
+        }
+        td { color: var(--text-secondary); }
+        td strong, td b { color: var(--text-primary); }
+        tbody tr:hover { background: var(--bg-card); }
+
+        /* ── Category cards ── */
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .cat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.4rem;
+            transition: border-color 0.15s, transform 0.15s;
+            position: relative;
+            overflow: hidden;
+        }
+        .cat-card:hover {
+            border-color: var(--accent-dim);
+            transform: translateY(-2px);
+        }
+        .cat-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            background: var(--accent);
+        }
+        .cat-card .cat-num {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            letter-spacing: 0.1em;
+        }
+        .cat-card h3 { margin-top: 0.4rem; margin-bottom: 0.4rem; }
+        .cat-card .skills {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent-2);
+            margin-bottom: 0.8rem;
+        }
+        .cat-card .desc {
+            font-size: 0.93rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .cat-card .top-emp {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+        }
+        .cat-card .top-emp strong { color: var(--text-primary); }
+        .cat-card .links {
+            display: flex;
+            gap: 0.8rem;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+        }
+        .cat-card .links a {
+            border: 1px solid var(--border-strong);
+            padding: 0.35rem 0.7rem;
+            border-radius: 4px;
+        }
+        .cat-card .links a:hover {
+            border-color: var(--accent);
+            background: var(--accent-glow);
+        }
+
+        /* ── Heatmap ── */
+        .heatmap-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+        .heatmap-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.5rem 0.95rem;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .heatmap-btn:hover { border-color: var(--accent-dim); color: var(--text-primary); }
+        .heatmap-btn.active {
+            background: var(--accent-glow);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .heatmap-frame {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        @media (max-width: 800px) {
+            .heatmap-frame { grid-template-columns: 1fr; }
+        }
+        .heatmap-svg-wrap { position: relative; }
+        #map {
+            width: 100%;
+            height: auto;
+            display: block;
+            background: linear-gradient(180deg, #050810 0%, #0a0e15 100%);
+            border-radius: 6px;
+        }
+        .map-side {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+        .map-side h4 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .legend-bar {
+            height: 14px;
+            background: linear-gradient(90deg, #1a2332, #f59e0b, #fef3c7);
+            border-radius: 3px;
+            margin: 0.5rem 0;
+        }
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+        .top-cities {
+            list-style: none;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+        }
+        .top-cities li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+        }
+        .top-cities .score {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ── Stats strip ── */
+        .stat-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0 0;
+        }
+        .stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+        }
+        .stat-num {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1.1;
+        }
+        .stat-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-top: 0.3rem;
+        }
+
+        /* ── Yorkshire focus ── */
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1.2rem 0;
+        }
+        .focus-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+        }
+        .focus-card h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+        .focus-card p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        .focus-card .meta {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 0.4rem;
+        }
+
+        /* ── Bar chart ── */
+        .bar-chart { margin: 1rem 0; }
+        .bar-row {
+            display: grid;
+            grid-template-columns: 200px 1fr 80px;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.88rem;
+        }
+        .bar-label { color: var(--text-secondary); }
+        .bar-track {
+            height: 18px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        }
+        .bar-num {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: var(--accent);
+            text-align: right;
+        }
+
+        /* ── Footer ── */
+        footer {
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+        footer a { color: var(--text-secondary); }
+
+        /* tooltip on map */
+        .tooltip {
+            position: absolute;
+            background: rgba(13,17,23,0.95);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.8rem;
+            color: var(--text-primary);
+            pointer-events: none;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            opacity: 0;
+            transition: opacity 0.1s;
+            z-index: 10;
+        }
+        .tooltip strong { color: var(--accent); }
+
+        /* misc */
+        .pill {
+            display: inline-block;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 0.15rem 0.7rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin: 0.1rem 0.2rem 0.1rem 0;
+        }
+        .pill.high { border-color: var(--accent); color: var(--accent); }
+        .note {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            font-style: italic;
+            border-left: 2px solid var(--border-strong);
+            padding-left: 0.9rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="series-label">UK Employer Landscape · April 2026</div>
+    <h1>Where to work in the UK as a <span class="accent">multidisciplinary engineer</span></h1>
+    <p class="subtitle">Six job categories mapped to UK employers, regional concentrations, and live job-posting volumes &mdash; built around a Staff-level profile spanning HW, FPGA, DSP, and agentic AI.</p>
+    <div class="hero-meta">Brendan Lynskey · Leeds · 25+ yrs · HW · Power · FPGA · DSP · LLM · Agents · Python</div>
+</header>
+
+<section id="overview">
+    <h2>Overview</h2>
+    <p>This report maps a multidisciplinary engineer's profile to <strong>six job categories</strong> realistically open in the UK, with each category covered by a sourced markdown writeup and surfaced together on this page. For every category there is a <em>top-employer table</em>, <em>regional concentration scores</em>, and a heatmap dot on the interactive UK map below. The map switches per category &mdash; click the buttons.</p>
+    <div class="stat-strip">
+        <div class="stat"><div class="stat-num">6</div><div class="stat-label">Job categories</div></div>
+        <div class="stat"><div class="stat-num">160+</div><div class="stat-label">UK employers profiled</div></div>
+        <div class="stat"><div class="stat-num">37</div><div class="stat-label">Cities & areas mapped</div></div>
+        <div class="stat"><div class="stat-num">~2,500</div><div class="stat-label">Live UK postings (est.)</div></div>
+    </div>
+</section>
+
+<section id="tldr">
+    <h2>TL;DR &mdash; strongest fits</h2>
+    <p>Distilled from the six per-category writeups: the employers most likely to want this hybrid HW + FPGA + DSP + agentic-AI profile, weighted by location preference (Yorkshire / Greater Manchester / UK-remote).</p>
+    <div class="table-wrap">
+        <table>
+            <thead><tr><th>Tier</th><th>Employer</th><th>Why it fits</th><th>Where</th></tr></thead>
+            <tbody>
+                <tr><td><strong>S</strong></td><td><strong>Synamedia</strong></td><td>Direct Pace plc lineage; DOCSIS/J.83/MPEG-2/DVB stack still in-house</td><td>Saltaire (Bradford)</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>Codethink</strong></td><td>UK's flagship upstream-Linux consultancy &mdash; kernel, BSPs, Yocto, automotive</td><td>Manchester / remote</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>Sky (Leeds tech hub)</strong></td><td>OTT video pipeline, RDK Linux STB, GenAI customer-care agents</td><td>Leeds Dock</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>Arm (Manchester / Sheffield)</strong></td><td>CPU verification, kernel, firmware &mdash; Northern offices growing</td><td>Manchester · Sheffield</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>Blaize</strong> (current)</td><td>Edge-AI SoC HW + agentic-AI software in one place</td><td>Leeds</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>BBC R&amp;D Salford</strong></td><td>Audio codecs, immersive sound, IP studio &mdash; broadcast-DSP pedigree</td><td>MediaCityUK</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>Peak</strong></td><td>Decision-intelligence platform with productised LangChain/LangGraph</td><td>Manchester (NOMA)</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>AutoTrader</strong></td><td>In-house ML/GenAI platform, shipping LLM features in-product</td><td>Manchester</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>AMD (ex-Xilinx)</strong></td><td>Versal/Zynq Petalinux, Vivado heritage match, hybrid-friendly</td><td>Cambridge · Edinburgh</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>MBDA Bolton</strong></td><td>Missile electronics FPGA &mdash; 90 min M62 from Leeds; SC clearance route</td><td>Bolton</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>Thales UK Cheadle Heath</strong></td><td>IFF, secure comms FPGA &mdash; commutable from Leeds</td><td>Stockport</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>Smith+Nephew (Hull/York)</strong></td><td>Surgical-robotics signal processing &amp; embedded Linux</td><td>Hull · York</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>Saga Robotics (York)</strong></td><td>Thorvald ag-robot &mdash; ROS on Linux, Zynq-class control</td><td>York</td></tr>
+                <tr><td><strong>A</strong></td><td><strong>AMS Neve (Burnley)</strong></td><td>Iconic pro-audio DSP/FPGA &mdash; rare openings, perfect cultural fit</td><td>Burnley</td></tr>
+                <tr><td><strong>B</strong></td><td>Hugging Face / Anthropic / Mistral / Cohere</td><td>UK-remote roles for senior engineers with open-weights focus</td><td>UK remote</td></tr>
+                <tr><td><strong>B</strong></td><td>Faculty AI / Quantexa</td><td>Applied agentic AI for govt/finance; remote-friendly</td><td>London / remote</td></tr>
+                <tr><td><strong>B</strong></td><td>Cambridge Consultants / TTP / Sagentia / Plextek / PA</td><td>Consultancy belt &mdash; cross-domain DSP/HW/FPGA fits 25-yr breadth</td><td>Cambridge cluster</td></tr>
+                <tr><td><strong>B</strong></td><td>Renishaw (York)</td><td>Metrology Linux on Zynq &mdash; direct stack match, York office</td><td>York</td></tr>
+                <tr><td><strong>B</strong></td><td>2net / ByteSnap / Witekio / Foundries.io / Collabora</td><td>Embedded-Linux consultancies, mostly remote-friendly</td><td>Sheffield · B'ham · UK-remote</td></tr>
+                <tr><td><strong>B</strong></td><td>Diodes Zetex (Oldham)</td><td>Discrete power IC + eval boards &mdash; geographically perfect</td><td>Oldham</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="note">Tiers reflect a combination of (a) technical fit, (b) commute/remote feasibility from Leeds, and (c) hiring activity April 2026. Tiers are not endorsements &mdash; treat as a prioritised research list, not a ranking.</p>
+</section>
+
+<section id="heatmap">
+    <h2>UK regional concentration heatmap</h2>
+    <p>Switch category to see where the relevant employers cluster. Dot size scales with the city's overall employer count; colour intensity is the per-category demand score (0&ndash;10).</p>
+    <div class="heatmap-controls" id="cat-buttons">
+        <button class="heatmap-btn active" data-cat="-1">Combined</button>
+        <button class="heatmap-btn" data-cat="0">Agentic AI / LLM</button>
+        <button class="heatmap-btn" data-cat="1">AI HW / SoC</button>
+        <button class="heatmap-btn" data-cat="2">FPGA / RTL</button>
+        <button class="heatmap-btn" data-cat="3">PI / SI / Power</button>
+        <button class="heatmap-btn" data-cat="4">DSP / Audio / Bcast</button>
+        <button class="heatmap-btn" data-cat="5">Embedded Linux</button>
+    </div>
+    <div class="heatmap-frame">
+        <div class="heatmap-svg-wrap">
+            <svg id="map" viewBox="0 0 520 720" xmlns="http://www.w3.org/2000/svg" aria-label="UK heatmap">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2332" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="520" height="720" fill="url(#grid)"/>
+                <!-- stylised UK outline (rough hand-drawn polygon) -->
+                <path id="uk-outline" d="
+                    M 240 270 Q 235 260 232 252 Q 225 245 215 240
+                    Q 205 248 200 255 Q 188 263 178 268 L 175 280
+                    Q 175 290 180 298 Q 178 308 182 316 L 188 322
+                    Q 200 320 215 318 Q 218 326 218 332
+                    Q 215 340 207 348 Q 195 354 185 360
+                    Q 200 365 215 362 Q 220 372 222 378
+                    Q 232 385 245 386 Q 255 392 263 400
+                    Q 250 410 240 418 Q 232 425 230 432
+                    Q 232 442 240 448 Q 256 449 273 448
+                    Q 290 446 305 443 Q 320 442 333 440
+                    Q 348 438 360 433 Q 370 430 378 425
+                    Q 388 425 395 433 Q 396 446 393 460
+                    Q 388 478 380 495 Q 380 510 384 525
+                    Q 388 540 380 557 Q 374 570 365 580
+                    Q 360 595 358 610 Q 345 622 330 628
+                    Q 312 628 295 624 Q 278 620 268 612
+                    Q 252 605 240 595 Q 230 588 222 580
+                    Q 215 573 210 568 Q 218 555 222 545
+                    Q 215 530 205 523 Q 195 512 188 502
+                    Q 178 488 175 477 Q 173 463 175 450
+                    Q 172 435 170 422 Q 175 408 178 395
+                    Q 175 380 178 365 Q 178 350 175 335
+                    Q 172 320 175 305 Q 178 290 240 270 Z
+                    M 105 380 Q 95 388 92 398 Q 92 412 100 420
+                    Q 115 422 128 418 Q 135 408 132 398 Q 122 385 105 380 Z"
+                    fill="#0d1117" stroke="#21262d" stroke-width="1" opacity="0.7"/>
+
+                <!-- City dots inserted by JS -->
+                <g id="dots"></g>
+                <g id="labels"></g>
+            </svg>
+            <div class="tooltip" id="tip"></div>
+        </div>
+        <div class="map-side">
+            <h4>Demand intensity</h4>
+            <div class="legend-bar"></div>
+            <div class="legend-labels"><span>0</span><span>5</span><span>10</span></div>
+            <h4 id="top-cities-label">Top cities (combined)</h4>
+            <ul class="top-cities" id="top-cities"></ul>
+        </div>
+    </div>
+    <p class="note">Source: aggregated employer-count and live-posting estimates from LinkedIn Jobs, Indeed, CW Jobs, and company careers pages, late April 2026. Demand scores are subjective 0&ndash;10 ratings combining employer count, role volume, and seniority match.</p>
+</section>
+
+<section id="categories">
+    <h2>The six job categories</h2>
+    <p>Each card links to a sourced markdown writeup covering 15&ndash;30 employers with locations, hiring status, regional-concentration tables, Yorkshire/Greater-Manchester focus, caveats, and source URLs.</p>
+    <div class="cat-grid">
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 01</div>
+            <h3>Agentic AI / LLM Engineering</h3>
+            <div class="skills">Python · LangGraph · MCP · Ollama · multi-agent · open-weights</div>
+            <p class="desc">London-and-Cambridge-dominated, with a real Manchester/Leeds applied-AI cluster. Strongest UK-remote leverage for an open-weights / agent-systems profile.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Anthropic UK · Hugging Face · Mistral · Cohere · DeepMind · Wayve · Peak · AutoTrader · Sky Leeds · Faculty · Quantexa · Arm AI</p>
+            <div class="links">
+                <a href="categories/01_agentic_ai_llm.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="0">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 02</div>
+            <h3>AI Hardware / SoC / Accelerator Silicon</h3>
+            <div class="skills">SoC bring-up · FPGA proto · HBM/PCIe · FC-BGA · accelerator boards</div>
+            <p class="desc">Cambridge dominant, Bristol second pole. Apple/Arm/AMD/NVIDIA/Graphcore/Axelera all hiring board/SI/PI/proto in 2026. Yorkshire thin (Blaize, Arm Sheffield).</p>
+            <p class="top-emp"><strong>Top fits:</strong> Arm · AMD · NVIDIA · Apple Cambridge · Graphcore · Axelera · Blaize · Imagination · Pragmatic · Codasip · Cadence Livingston</p>
+            <div class="links">
+                <a href="categories/02_ai_hardware_soc.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="1">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 03</div>
+            <h3>FPGA / RTL / Digital Design</h3>
+            <div class="skills">Xilinx UltraScale+ · Vivado · AWS F1 · VHDL · Verilog · SystemVerilog</div>
+            <p class="desc">Defence is the largest single demand source (BAE/Leonardo/MBDA/Thales/Roke/QinetiQ &mdash; clearance-gated). IP houses Cambridge-centric. Quantum a fast-growing niche.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Arm · AMD · MBDA Bolton · Thales Cheadle · Raytheon Manchester · BBC R&amp;D Salford · Synamedia Saltaire · Leonardo · BAE · Riverlane · Picocom</p>
+            <div class="links">
+                <a href="categories/03_fpga_rtl.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="2">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 04</div>
+            <h3>High-Performance HW · PI · SI · Power</h3>
+            <div class="skills">Sigrity · Allegro · multiphase DCDC · HDI · DDR/PCIe/MIPI · Cadence stack</div>
+            <p class="desc">Cambridge silicon-bring-up niche is the natural home; Bristol/Edinburgh strong; Yorkshire thin (Blaize). Diodes Zetex Oldham + Thales Cheadle locally.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Arm · AMD · Graphcore · NVIDIA · Apple · Blaize · Pragmatic · Renishaw · Dyson · Keysight · MBDA Stevenage · Cambridge Consultants · TTP · PA</p>
+            <div class="links">
+                <a href="categories/04_pi_si_pcb_power.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="3">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 05</div>
+            <h3>DSP · Audio · Broadcast · Comms PHY</h3>
+            <div class="skills">NumPy/MATLAB · DOCSIS · J.83 · DVB · MPEG · 5G/6G PHY · audio codecs</div>
+            <p class="desc">Genuine Yorkshire/Lancs strength: Synamedia Saltaire (Pace lineage), AMS Neve Burnley, BBC R&amp;D Salford, Sky Leeds, Smith+Nephew Hull/York.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Synamedia Saltaire · BBC R&amp;D Salford · AMS Neve · Sky Leeds · Sagentia · Cambridge Consultants · TTP · Cirrus Logic · XMOS · AccelerComm · Smith+Nephew</p>
+            <div class="links">
+                <a href="categories/05_dsp_audio_broadcast.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="4">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 06</div>
+            <h3>Embedded Systems · Linux · Firmware</h3>
+            <div class="skills">C/C++ · Linux kernel · Buildroot · Yocto · U-Boot · Petalinux · Cortex-A/M · Zynq</div>
+            <p class="desc">The highest-leverage category for a Leeds-based engineer: Codethink Manchester, Synamedia Saltaire, Sky Leeds, Arm Manchester/Sheffield, Smith+Nephew Hull, Saga Robotics York.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Codethink · Synamedia · Sky Leeds · Arm · AMD Versal · Collabora · Foundries.io · Canonical · 2net Sheffield · ByteSnap · CMR Surgical · JLR SDV · Renishaw York</p>
+            <div class="links">
+                <a href="categories/06_embedded_linux.md">Read writeup &rarr;</a>
+                <a href="#" data-cat-jump="5">Heatmap</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="postings">
+    <h2>Live UK job postings &mdash; April 2026 (estimated)</h2>
+    <p>Order-of-magnitude UK-wide live posting counts per category, aggregated across LinkedIn, Indeed, CW Jobs, and company careers pages. Numbers fluctuate weekly and many postings cross-syndicate.</p>
+    <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">Agentic AI / LLM</div><div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div><div class="bar-num">~2,500</div></div>
+        <div class="bar-row"><div class="bar-label">Embedded Linux / firmware</div><div class="bar-track"><div class="bar-fill" style="width: 64%"></div></div><div class="bar-num">~1,600</div></div>
+        <div class="bar-row"><div class="bar-label">Hardware / PI / SI / PCB</div><div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div><div class="bar-num">~1,250</div></div>
+        <div class="bar-row"><div class="bar-label">DSP / audio / broadcast / PHY</div><div class="bar-track"><div class="bar-fill" style="width: 26%"></div></div><div class="bar-num">~650</div></div>
+        <div class="bar-row"><div class="bar-label">FPGA / RTL / digital design</div><div class="bar-track"><div class="bar-fill" style="width: 20%"></div></div><div class="bar-num">~500</div></div>
+        <div class="bar-row"><div class="bar-label">AI HW / SoC / silicon</div><div class="bar-track"><div class="bar-fill" style="width: 16%"></div></div><div class="bar-num">~400</div></div>
+    </div>
+    <p class="note">Caveat: agent/LLM count is the noisiest &mdash; "agent" matches insurance, real-estate, and customer-service roles; the figure here is filtered after sampling. AI-HW/silicon volume is small in absolute terms but each role is highly senior and Brendan-shaped.</p>
+</section>
+
+<section id="yorkshire">
+    <h2>Yorkshire &amp; Greater Manchester &mdash; the local picture</h2>
+    <p>The single most under-rated finding from this research: the <strong>Yorkshire / Lancashire / Greater Manchester arc</strong> contains an unusually rich set of employers for a hybrid HW + DSP + embedded-Linux + AI profile, even though the absolute headcount is below the Cambridge / Bristol clusters. The list below is the realistic commutable + UK-remote candidate set.</p>
+    <div class="focus-grid">
+        <div class="focus-card"><h4>Synamedia &mdash; Saltaire</h4><p>Direct Pace plc descendant; video headend, anti-piracy, CDN. Closest UK match to a DOCSIS/J.83/MPEG/DVB background. Embedded Linux STB engineering still in-house.</p><div class="meta">~25 min from Leeds</div></div>
+        <div class="focus-card"><h4>Codethink &mdash; Manchester</h4><p>UK's flagship upstream-Linux consultancy. Kernel, BSPs, Yocto, MISRA, AGL, CIP, ELISA. Hybrid Manchester or full remote. Bullseye for the embedded-Linux profile.</p><div class="meta">~1 h or remote</div></div>
+        <div class="focus-card"><h4>Sky &mdash; Leeds Dock</h4><p>Sky Glass / Sky Stream platform team; RDK-B, Linux middleware, secure boot, ad-tech, OTT QoE. Largest single AI/data engineering employer in Yorkshire.</p><div class="meta">In Leeds</div></div>
+        <div class="focus-card"><h4>Arm &mdash; Manchester &amp; Sheffield</h4><p>Manchester (~80&ndash;120 engineers, CPU verification, ISP, central engineering); Sheffield (~30&ndash;50 engineers, CPU design verification, opened 2021).</p><div class="meta">Manchester · Sheffield</div></div>
+        <div class="focus-card"><h4>Blaize &mdash; Leeds</h4><p>Edge-AI SoC; HW systems engineering + agentic-AI software in one place. Current employer.</p><div class="meta">In Leeds</div></div>
+        <div class="focus-card"><h4>BBC R&amp;D &mdash; Salford</h4><p>Audio codecs, immersive sound (ADM, MPEG-H), 5G broadcast trials, IP studio, AV1 hardware research.</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>MBDA &mdash; Bolton</h4><p>Missile electronics, expanding under DragonFire and CAMM-MR; FPGA/RTL roles posted regularly. SC clearance required.</p><div class="meta">~90 min M62</div></div>
+        <div class="focus-card"><h4>Thales UK &mdash; Cheadle Heath</h4><p>IFF, secure comms, avionics &mdash; FPGA/RTL roles 2&ndash;4 open at any time. SC clearance.</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>Raytheon &amp; Roke &mdash; Manchester</h4><p>EW, radar signal processing (Raytheon, Broughton St); SIGINT + AI (Roke Spinningfields, ~30 engineers).</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>Peak &mdash; Manchester (NOMA)</h4><p>Decision-intelligence platform productising LangChain/LangGraph patterns; hiring senior AI/ML engineers.</p><div class="meta">~1 h or hybrid</div></div>
+        <div class="focus-card"><h4>AutoTrader &amp; Co-op Digital &mdash; Manchester</h4><p>In-house ML platform, GenAI features in product (AutoTrader); LLM gateway and internal RAG copilots (Co-op Angel Sq).</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>AMS Neve &mdash; Burnley</h4><p>Iconic pro-audio: 88RS console, Genesys, converters. Small DSP/FPGA team. Rare openings, perfect cultural fit.</p><div class="meta">~50 min</div></div>
+        <div class="focus-card"><h4>Smith+Nephew &mdash; Hull / York</h4><p>Surgical-robotics signal processing &amp; imaging; algorithm and embedded-Linux work in York.</p><div class="meta">~1 h&ndash;1 h 30</div></div>
+        <div class="focus-card"><h4>Saga Robotics &mdash; York</h4><p>Thorvald agricultural robot &mdash; ROS on Linux, Zynq-class control. Direct Petalinux/UltraScale+ stack match.</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>Renishaw &mdash; York office</h4><p>Metrology, lots of Zynq-on-Linux opportunities.</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>2net &amp; Imagination &mdash; Sheffield / Leeds</h4><p>2net (Sheffield) &mdash; pure embedded-Linux consultancy on the doorstep. Imagination Leeds &mdash; small but live legacy Pure/Ensigma site.</p><div class="meta">~30&ndash;40 min</div></div>
+        <div class="focus-card"><h4>Diodes Zetex &mdash; Oldham</h4><p>Discrete power IC, LED drivers, MOSFETs &mdash; geographically perfect, more IC-level than board-level (validate fit).</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>BJSS / Infinity Works (IBM) &mdash; Leeds &amp; Manchester</h4><p>Real GenAI client engagements rather than slideware; embedded/IoT delivery for clients. Hybrid offices in both Leeds and Manchester.</p><div class="meta">In Leeds</div></div>
+        <div class="focus-card"><h4>Siemens DISW &mdash; Didsbury</h4><p>Mentor Embedded Linux legacy, automotive Capital, industrial.</p><div class="meta">~1 h</div></div>
+        <div class="focus-card"><h4>JLR &mdash; Manchester SDV hub</h4><p>Software-defined-vehicle Linux platform team; ramping 2025&ndash;26.</p><div class="meta">~1 h</div></div>
+    </div>
+</section>
+
+<section id="methodology">
+    <h2>Methodology &amp; caveats</h2>
+    <p><strong>Source pipeline:</strong> per-category research used WebSearch + WebFetch against company careers pages, LinkedIn Jobs (UK filter), Indeed UK, CW Jobs, semiconductor-jobs.co.uk, UKESF directory, plus 2024&ndash;26 industry reporting (Tech Nation, Dealroom, Beauhurst, eeNews Europe, EE Times Europe). Each per-category writeup includes its own <em>Sources</em> section with URLs.</p>
+    <p><strong>Heatmap scoring:</strong> regional concentration scores are subjective 0&ndash;10 ratings combining (a) number of distinct employers in the area, (b) typical role volume in April 2026, and (c) seniority/match to the profile. Scores are not employer counts &mdash; a city with three highly-relevant Staff-level employers may score higher than one with ten junior roles.</p>
+    <p><strong>Posting volumes</strong> are order-of-magnitude estimates and fluctuate weekly. Many roles cross-syndicate between job boards, inflating naive totals.</p>
+    <p><strong>Clearance:</strong> defence employers (BAE / Leonardo / MBDA / Thales / Roke / QinetiQ / Cobham Ultra / AWE) almost always require SC or DV clearance and UK nationality / 5&ndash;10 yr UK residency. Clearance processing is 6&ndash;12 weeks.</p>
+    <p><strong>What's deliberately excluded:</strong> generic Big-4 consultancy "AI" roles without engineering depth; recruiter agencies; companies with no UK engineering presence (Aleph Alpha, SambaNova, Tenstorrent at time of writing).</p>
+</section>
+
+<footer>
+    <p>UK Employer Landscape · April 2026 · part of <a href="https://github.com/BrendanJamesLynskey/Miscellaneous">BrendanJamesLynskey/Miscellaneous</a></p>
+    <p style="margin-top: 0.5rem;">Live site: <a href="https://brendanjameslynskey.github.io/UK_Employer_Landscape/">brendanjameslynskey.github.io/UK_Employer_Landscape</a></p>
+</footer>
+
+<script>
+    // Per-category city data: each city has a 6-element score array [agentic_ai, ai_hw, fpga, pi_si, dsp, embedded] on 0-10 scale
+    const CATEGORIES = ['Agentic AI / LLM', 'AI HW / SoC', 'FPGA / RTL', 'PI / SI / Power', 'DSP / Audio / Bcast', 'Embedded Linux'];
+    const cities = [
+        // London cluster
+        {name: 'London', lat: 51.5, lon: -0.1, scores: [10, 5, 4, 3, 9, 7]},
+        {name: 'Reading', lat: 51.45, lon: -0.97, scores: [4, 6, 6, 7, 6, 6]},
+        {name: 'Bracknell', lat: 51.4, lon: -0.75, scores: [2, 4, 4, 5, 4, 4]},
+        // East
+        {name: 'Cambridge', lat: 52.2, lon: 0.1, scores: [8, 10, 9, 10, 10, 10]},
+        {name: 'Stevenage', lat: 51.9, lon: -0.2, scores: [1, 1, 7, 7, 4, 5]},
+        {name: 'Kings Langley', lat: 51.71, lon: -0.46, scores: [1, 5, 5, 4, 2, 5]},
+        // South
+        {name: 'Crawley', lat: 51.1, lon: -0.2, scores: [0, 0, 5, 4, 3, 4]},
+        {name: 'Southampton', lat: 50.9, lon: -1.4, scores: [1, 1, 5, 5, 5, 4]},
+        {name: 'Worthing', lat: 50.81, lon: -0.37, scores: [0, 0, 0, 3, 4, 1]},
+        {name: 'Maidstone', lat: 51.27, lon: 0.52, scores: [0, 0, 0, 2, 4, 1]},
+        {name: 'High Wycombe', lat: 51.63, lon: -0.75, scores: [0, 0, 0, 3, 5, 1]},
+        // Oxford / SW
+        {name: 'Oxford', lat: 51.75, lon: -1.25, scores: [5, 4, 2, 5, 5, 3]},
+        {name: 'Bristol', lat: 51.45, lon: -2.6, scores: [6, 9, 7, 9, 8, 8]},
+        {name: 'Bath', lat: 51.4, lon: -2.4, scores: [3, 3, 5, 4, 5, 3]},
+        {name: 'Cheltenham', lat: 51.9, lon: -2.07, scores: [1, 1, 6, 4, 5, 5]},
+        {name: 'Malmesbury', lat: 51.59, lon: -2.1, scores: [0, 0, 0, 5, 0, 4]},
+        // Wales
+        {name: 'Cardiff', lat: 51.48, lon: -3.18, scores: [2, 0, 1, 2, 1, 1]},
+        {name: 'Newport', lat: 51.59, lon: -2.99, scores: [0, 0, 0, 4, 0, 0]},
+        // Midlands
+        {name: 'Birmingham', lat: 52.5, lon: -1.9, scores: [5, 0, 2, 3, 2, 6]},
+        {name: 'Coventry', lat: 52.4, lon: -1.5, scores: [1, 0, 1, 3, 0, 5]},
+        // North-West
+        {name: 'Manchester', lat: 53.5, lon: -2.25, scores: [8, 4, 7, 5, 7, 9]},
+        {name: 'Salford', lat: 53.5, lon: -2.32, scores: [4, 0, 5, 2, 8, 7]},
+        {name: 'Bolton', lat: 53.6, lon: -2.43, scores: [0, 0, 6, 3, 1, 1]},
+        {name: 'Burnley', lat: 53.79, lon: -2.24, scores: [0, 0, 1, 1, 6, 1]},
+        {name: 'Stockport', lat: 53.4, lon: -2.16, scores: [0, 0, 6, 6, 3, 4]},
+        {name: 'Oldham', lat: 53.54, lon: -2.12, scores: [0, 0, 0, 6, 0, 0]},
+        // Yorkshire
+        {name: 'Leeds', lat: 53.8, lon: -1.55, scores: [6, 4, 4, 4, 7, 8]},
+        {name: 'Saltaire', lat: 53.84, lon: -1.79, scores: [0, 0, 4, 2, 9, 9]},
+        {name: 'Sheffield', lat: 53.4, lon: -1.5, scores: [3, 4, 4, 4, 3, 6]},
+        {name: 'Hull', lat: 53.74, lon: -0.34, scores: [1, 0, 1, 4, 5, 7]},
+        {name: 'York', lat: 53.96, lon: -1.08, scores: [1, 0, 1, 3, 5, 7]},
+        // North-East
+        {name: 'Newcastle', lat: 54.97, lon: -1.6, scores: [4, 0, 1, 2, 1, 3]},
+        {name: 'Sedgefield', lat: 54.65, lon: -1.45, scores: [0, 6, 0, 4, 0, 0]},
+        // Scotland
+        {name: 'Edinburgh', lat: 55.95, lon: -3.19, scores: [5, 5, 8, 6, 7, 6]},
+        {name: 'Glasgow', lat: 55.86, lon: -4.25, scores: [5, 1, 4, 2, 4, 4]},
+        {name: 'Livingston', lat: 55.88, lon: -3.52, scores: [0, 4, 4, 4, 0, 3]},
+        // NI
+        {name: 'Belfast', lat: 54.6, lon: -5.93, scores: [3, 2, 4, 2, 3, 5]},
+    ];
+
+    // lat/lon -> SVG coordinates (viewBox 520x720)
+    const VB_W = 520, VB_H = 720;
+    function ll2xy(lat, lon) {
+        const x = 20 + (lon + 8) * 46;
+        const y = 680 - (lat - 50) * 66;
+        return {x, y};
+    }
+
+    // composite: mean of 6 scores
+    cities.forEach(c => {
+        c.composite = c.scores.reduce((a,b)=>a+b,0) / c.scores.length;
+        c.maxScore = Math.max(...c.scores);
+    });
+
+    // Color scale: 0 → cool dark, 5 → amber, 10 → cream
+    function colorScale(v) {
+        // v in 0..10
+        const t = Math.max(0, Math.min(1, v/10));
+        if (t < 0.5) {
+            // dark teal #1a2332 -> amber #f59e0b
+            const k = t * 2;
+            const r = Math.round(0x1a + (0xf5 - 0x1a) * k);
+            const g = Math.round(0x23 + (0x9e - 0x23) * k);
+            const b = Math.round(0x32 + (0x0b - 0x32) * k);
+            return `rgb(${r},${g},${b})`;
+        } else {
+            // amber -> cream #fef3c7
+            const k = (t - 0.5) * 2;
+            const r = Math.round(0xf5 + (0xfe - 0xf5) * k);
+            const g = Math.round(0x9e + (0xf3 - 0x9e) * k);
+            const b = Math.round(0x0b + (0xc7 - 0x0b) * k);
+            return `rgb(${r},${g},${b})`;
+        }
+    }
+
+    function renderMap(catIdx) {
+        const dotsG = document.getElementById('dots');
+        const labelsG = document.getElementById('labels');
+        dotsG.innerHTML = '';
+        labelsG.innerHTML = '';
+
+        cities.forEach(c => {
+            const {x, y} = ll2xy(c.lat, c.lon);
+            const score = catIdx === -1 ? c.composite : c.scores[catIdx];
+            const radiusBase = catIdx === -1 ? c.composite : Math.max(c.maxScore, 4);
+            const r = 3 + radiusBase * 1.4;
+            const fill = colorScale(score);
+            const opacity = 0.35 + (score / 10) * 0.65;
+
+            // outer glow
+            if (score > 6) {
+                const glow = document.createElementNS('http://www.w3.org/2000/svg','circle');
+                glow.setAttribute('cx', x); glow.setAttribute('cy', y);
+                glow.setAttribute('r', r + 6);
+                glow.setAttribute('fill', fill);
+                glow.setAttribute('opacity', '0.15');
+                dotsG.appendChild(glow);
+            }
+            const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
+            dot.setAttribute('cx', x); dot.setAttribute('cy', y);
+            dot.setAttribute('r', r);
+            dot.setAttribute('fill', fill);
+            dot.setAttribute('opacity', opacity);
+            dot.setAttribute('stroke', '#0a0a0a');
+            dot.setAttribute('stroke-width', '0.6');
+            dot.setAttribute('data-city', c.name);
+            dot.setAttribute('data-score', score.toFixed(1));
+            dot.style.cursor = 'pointer';
+            dot.addEventListener('mouseenter', e => showTip(e, c, score, catIdx));
+            dot.addEventListener('mousemove', moveTip);
+            dot.addEventListener('mouseleave', hideTip);
+            dotsG.appendChild(dot);
+
+            // labels for major cities
+            if (radiusBase >= 5 || ['Leeds','Saltaire','Manchester','Sheffield','York','Hull','Burnley','Stockport','Oldham','Bolton','Belfast','Cardiff','Cambridge','London','Bristol','Edinburgh','Glasgow','Newcastle','Birmingham','Oxford'].includes(c.name)) {
+                const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+                let dx = r + 5, dy = 4, anchor = 'start';
+                // labels for left-side cities go to left
+                if (c.lon < -3) { dx = -r - 5; anchor = 'end'; }
+                txt.setAttribute('x', x + dx);
+                txt.setAttribute('y', y + dy);
+                txt.setAttribute('text-anchor', anchor);
+                txt.setAttribute('fill', '#a1a1aa');
+                txt.setAttribute('font-family', 'JetBrains Mono, monospace');
+                txt.setAttribute('font-size', '10');
+                txt.textContent = c.name;
+                labelsG.appendChild(txt);
+            }
+        });
+
+        // top-cities side panel
+        const sorted = [...cities].sort((a,b) => {
+            const sa = catIdx === -1 ? a.composite : a.scores[catIdx];
+            const sb = catIdx === -1 ? b.composite : b.scores[catIdx];
+            return sb - sa;
+        }).slice(0, 10);
+        const ul = document.getElementById('top-cities');
+        ul.innerHTML = '';
+        sorted.forEach(c => {
+            const s = catIdx === -1 ? c.composite : c.scores[catIdx];
+            const li = document.createElement('li');
+            li.innerHTML = `<span>${c.name}</span><span class="score">${s.toFixed(1)}</span>`;
+            ul.appendChild(li);
+        });
+        document.getElementById('top-cities-label').textContent =
+            catIdx === -1 ? 'Top cities (combined)' : `Top cities — ${CATEGORIES[catIdx]}`;
+    }
+
+    // tooltip
+    const tip = document.getElementById('tip');
+    function showTip(e, city, score, catIdx) {
+        const catLabel = catIdx === -1 ? 'Combined' : CATEGORIES[catIdx];
+        const allScores = city.scores.map((s,i) => `${CATEGORIES[i]}: ${s}`).join('<br>');
+        tip.innerHTML = `<strong>${city.name}</strong><br>${catLabel}: <strong>${score.toFixed(1)}</strong>/10<br><span style="font-size:0.7rem;color:#8b949e">${allScores}</span>`;
+        tip.style.opacity = '1';
+        moveTip(e);
+    }
+    function moveTip(e) {
+        const wrap = document.querySelector('.heatmap-svg-wrap').getBoundingClientRect();
+        tip.style.left = (e.clientX - wrap.left + 12) + 'px';
+        tip.style.top = (e.clientY - wrap.top + 12) + 'px';
+    }
+    function hideTip() { tip.style.opacity = '0'; }
+
+    // category buttons
+    document.querySelectorAll('.heatmap-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.heatmap-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderMap(parseInt(btn.dataset.cat));
+        });
+    });
+
+    // jump links from category cards
+    document.querySelectorAll('[data-cat-jump]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const idx = parseInt(a.dataset.catJump);
+            document.querySelectorAll('.heatmap-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`.heatmap-btn[data-cat="${idx}"]`).classList.add('active');
+            renderMap(idx);
+            document.getElementById('heatmap').scrollIntoView({behavior:'smooth'});
+        });
+    });
+
+    // initial render
+    renderMap(-1);
+</script>
+
+</body>
+</html>
