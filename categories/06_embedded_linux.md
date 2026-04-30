@@ -13,13 +13,14 @@ For a Staff-level Zynq-UltraScale+ / Petalinux / Buildroot / kernel-driver engin
 | # | Employer | UK site(s) | Embedded SW focus |
 |---|----------|------------|-------------------|
 | 1 | **Codethink** | Manchester (HQ), remote | Upstream Linux kernel, BSPs, Yocto, automotive Linux (AGL), safety-critical Linux, CIP |
-| 2 | **Synamedia** (ex-Cisco Video / Pace lineage) | Saltaire (Shipley), Staines | Linux STB middleware, video pipeline, DRM, secure boot on MIPS/ARM SoCs |
+| 2 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** (Shipley) | The actual successor to Pace plc at the Saltaire site (Pace &rarr; Arris 2016 &rarr; CommScope 2019). Linux STB / cable-modem / Wi-Fi-gateway middleware, RDK, secure boot on Broadcom/MediaTek SoCs. *Note: Synamedia is a separate company at Staines &mdash; NOT at Saltaire.* [careers.commscope.com](https://careers.commscope.com/location/saltaire-jobs/8610/2635167-6269131-2638652/4) |
+| 2b | **Synamedia** (ex-Cisco Video / NDS) | Staines-upon-Thames + global | Video headend, anti-piracy, OTT delivery. Embedded Linux work primarily at Staines. *Different company* from CommScope/Pace. |
 | 3 | **Arm Ltd.** | Cambridge HQ, Manchester, Sheffield, Belfast, Warwick | Linux kernel, Trusted Firmware-A/M, OP-TEE, Mbed, Pelion, hypervisors |
 | 4 | **Sky / Comcast / NBCU** | Leeds, Osterley, Livingston | Sky Q/Glass Linux STB, RDK, video middleware |
 | 5 | **AMD** (ex-Xilinx) | Cambridge, Edinburgh | Versal / Zynq UltraScale+ Petalinux, FSBL, PMU firmware, AXI drivers |
 | 6 | **Collabora** | Remote UK (Cambridge nominal) | Upstream kernel, Mesa, GStreamer, Wayland, Panfrost |
 | 7 | **Foundries.io** | Cambridge, remote | LmP (Linux microPlatform) for IoT, OTA, Zephyr |
-| 8 | **Imagination Technologies** | Kings Langley, Leeds (small) | PowerVR GPU drivers, Mesa, RISC-V Linux, Catapult |
+| 8 | **Imagination Technologies** | Kings Langley HQ, Cambridge (no Leeds office &mdash; common misconception) | PowerVR GPU drivers, Mesa, RISC-V Linux, Catapult |
 | 9 | **NVIDIA** | Bristol, Cambridge | Jetson / DRIVE Linux BSPs, Tegra kernel |
 | 10 | **Canonical** | Fully remote UK (London nominal) | Ubuntu Core, snapd, IoT, Optee integration |
 | 11 | **CMR Surgical** | Cambridge | Versius robot — Linux on Zynq, RT control, safety |
@@ -46,7 +47,7 @@ Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley —
 |--------|--------------|---------------|
 | Cambridge / East Anglia | 10 | Arm, AMD, Collabora, Foundries.io, CMR, Apple, MediaTek |
 | **Greater Manchester** | **8** | **Codethink**, Arm Manchester, Siemens EDA Didsbury, BBC R&D Salford, Roke Manchester, JLR SDV, Thales |
-| **West Yorkshire** (Leeds/Bradford/Saltaire) | **7** | **Synamedia Saltaire**, **Sky Leeds**, BJSS, Liberty Global Bradford, Imagination (small Leeds) |
+| **West Yorkshire** (Leeds/Bradford/Saltaire/Hebden Bridge) | **7** | **CommScope (Salts Mill, Saltaire)**, **Sky Leeds**, **Calrec Audio (Hebden Bridge)**, BJSS, Liberty Global Bradford |
 | Bristol / Bath | 8 | NVIDIA, Dyson, XMOS, Graphcore (winding down), Leonardo, Nokia, Toshiba |
 | London / Thames Valley | 8 | Canonical, Sky Osterley, Wayve, Synamedia Staines, AWS, Witekio Reading |
 | Edinburgh / Scotland | 6 | AMD Edinburgh, Leonardo, Sky Livingston, Codeplay (Intel) |
@@ -71,7 +72,8 @@ Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley —
 This corridor is the **highest-leverage** target set:
 
 - **Codethink (Manchester)** — the UK's flagship upstream-Linux consultancy. Public roles regularly want exactly this stack: kernel, BSP, Yocto/Buildroot, MISRA-C, automotive (CIP, ELISA, AGL). Hybrid Manchester or remote.
-- **Synamedia (Saltaire)** — direct corporate descendant of Pace plc; the Saltaire site still does Linux set-top-box work on Broadcom/MediaTek SoCs. Roles for "Senior Embedded SW Engineer" and "Video Software Engineer" recur. ~30 min from Leeds.
+- **CommScope (Salts Mill, Saltaire)** — the actual corporate descendant of Pace plc (Pace &rarr; Arris 2016 &rarr; CommScope 2019); the Saltaire site still does Linux set-top-box / cable-modem / gateway work on Broadcom/MediaTek SoCs. Roles for "Senior Embedded SW Engineer" and "Video Software Engineer" recur. ~30 min from Leeds. *Synamedia is a different company in Staines &mdash; common confusion.*
+- **Calrec Audio (Hebden Bridge)** — pro-broadcast audio mixing consoles; firmware / embedded Linux / DSP roles at Nutclough Mill. ~40 min from Leeds.
 - **Sky / Comcast (Leeds)** — Sky Glass / Sky Stream platform team in Leeds Dock; RDK-B, Linux middleware, secure boot.
 - **Arm (Manchester & Sheffield)** — Manchester (Hardman Square) does CPU verification but also Mali/SystemReady SW; Sheffield does kernel & firmware.
 - **Siemens DISW (Didsbury, Manchester)** — Mentor Embedded Linux legacy, automotive Capital, industrial.
@@ -95,6 +97,8 @@ This corridor is the **highest-leverage** target set:
 ## Sources
 
 - <https://www.codethink.co.uk/jobs/>
+- <https://careers.commscope.com/location/saltaire-jobs/8610/2635167-6269131-2638652/4>
+- <https://calrec.com/careers/>
 - <https://www.synamedia.com/careers/>
 - <https://careers.arm.com>
 - <https://careers.sky.com>

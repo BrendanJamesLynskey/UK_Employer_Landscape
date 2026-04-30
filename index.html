@@ -458,12 +458,12 @@
 
 <section id="overview">
     <h2>Overview</h2>
-    <p>This report maps a multidisciplinary engineer's profile to <strong>six job categories</strong> realistically open in the UK, with each category covered by a sourced markdown writeup and surfaced together on this page. For every category there is a <em>top-employer table</em>, <em>regional concentration scores</em>, and a heatmap dot on the interactive UK map below. The map switches per category &mdash; click the buttons.</p>
+    <p>This report maps a multidisciplinary engineer's profile to <strong>seven job categories</strong> realistically open in the UK (six on-shore + one pure-remote / international), with each category covered by a sourced markdown writeup and surfaced together on this page. For every UK category there is a <em>top-employer table</em>, <em>regional concentration scores</em>, and a heatmap dot on the interactive UK map below. The map switches per category &mdash; click the buttons.</p>
     <div class="stat-strip">
-        <div class="stat"><div class="stat-num">6</div><div class="stat-label">Job categories</div></div>
-        <div class="stat"><div class="stat-num">160+</div><div class="stat-label">UK employers profiled</div></div>
-        <div class="stat"><div class="stat-num">37</div><div class="stat-label">Cities & areas mapped</div></div>
-        <div class="stat"><div class="stat-num">~2,500</div><div class="stat-label">Live UK postings (est.)</div></div>
+        <div class="stat"><div class="stat-num">7</div><div class="stat-label">Job categories</div></div>
+        <div class="stat"><div class="stat-num">220+</div><div class="stat-label">Employers profiled</div></div>
+        <div class="stat"><div class="stat-num">38</div><div class="stat-label">UK cities & areas mapped</div></div>
+        <div class="stat"><div class="stat-num">~4,500</div><div class="stat-label">Live postings (UK + remote)</div></div>
     </div>
 </section>
 
@@ -474,7 +474,8 @@
         <table>
             <thead><tr><th>Tier</th><th>Employer</th><th>Why it fits</th><th>Where</th></tr></thead>
             <tbody>
-                <tr><td><strong>S</strong></td><td><strong>Synamedia</strong></td><td>Direct Pace plc lineage; DOCSIS/J.83/MPEG-2/DVB stack still in-house</td><td>Saltaire (Bradford)</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>CommScope</strong> (ex-Pace via Arris)</td><td>Set-top box / video gateway / cable-modem engineering at the original Pace plc site &mdash; the actual DOCSIS/MPEG/DVB lineage Brendan worked on</td><td>Salts Mill, Saltaire</td></tr>
+                <tr><td><strong>S</strong></td><td><strong>Calrec Audio</strong> (Audiotonix)</td><td>Live-broadcast audio mixing consoles (Argo / Type R / Brio / ImPulse1 ST2110) &mdash; pure-DSP and broadcast on the doorstep</td><td>Hebden Bridge</td></tr>
                 <tr><td><strong>S</strong></td><td><strong>Codethink</strong></td><td>UK's flagship upstream-Linux consultancy &mdash; kernel, BSPs, Yocto, automotive</td><td>Manchester / remote</td></tr>
                 <tr><td><strong>S</strong></td><td><strong>Sky (Leeds tech hub)</strong></td><td>OTT video pipeline, RDK Linux STB, GenAI customer-care agents</td><td>Leeds Dock</td></tr>
                 <tr><td><strong>S</strong></td><td><strong>Arm (Manchester / Sheffield)</strong></td><td>CPU verification, kernel, firmware &mdash; Northern offices growing</td><td>Manchester · Sheffield</td></tr>
@@ -521,34 +522,21 @@
                     </pattern>
                 </defs>
                 <rect width="520" height="720" fill="url(#grid)"/>
-                <!-- stylised UK outline (rough hand-drawn polygon) -->
+                <!-- UK outline (Great Britain + Northern Ireland), points derived from coastline lat/lon -->
                 <path id="uk-outline" d="
-                    M 240 270 Q 235 260 232 252 Q 225 245 215 240
-                    Q 205 248 200 255 Q 188 263 178 268 L 175 280
-                    Q 175 290 180 298 Q 178 308 182 316 L 188 322
-                    Q 200 320 215 318 Q 218 326 218 332
-                    Q 215 340 207 348 Q 195 354 185 360
-                    Q 200 365 215 362 Q 220 372 222 378
-                    Q 232 385 245 386 Q 255 392 263 400
-                    Q 250 410 240 418 Q 232 425 230 432
-                    Q 232 442 240 448 Q 256 449 273 448
-                    Q 290 446 305 443 Q 320 442 333 440
-                    Q 348 438 360 433 Q 370 430 378 425
-                    Q 388 425 395 433 Q 396 446 393 460
-                    Q 388 478 380 495 Q 380 510 384 525
-                    Q 388 540 380 557 Q 374 570 365 580
-                    Q 360 595 358 610 Q 345 622 330 628
-                    Q 312 628 295 624 Q 278 620 268 612
-                    Q 252 605 240 595 Q 230 588 222 580
-                    Q 215 573 210 568 Q 218 555 222 545
-                    Q 215 530 205 523 Q 195 512 188 502
-                    Q 178 488 175 477 Q 173 463 175 450
-                    Q 172 435 170 422 Q 175 408 178 395
-                    Q 175 380 178 365 Q 178 350 175 335
-                    Q 172 320 175 305 Q 178 290 240 270 Z
-                    M 105 380 Q 95 388 92 398 Q 92 412 100 420
-                    Q 115 422 128 418 Q 135 408 132 398 Q 122 385 105 380 Z"
-                    fill="#0d1117" stroke="#21262d" stroke-width="1" opacity="0.7"/>
+                    M 125 675 L 148 683 L 198 656 L 220 666 L 275 646 L 302 633
+                    L 352 632 L 382 626 L 400 631 L 448 605 L 452 588 L 421 578
+                    L 450 550 L 469 516 L 448 487 L 411 486 L 404 473 L 394 444
+                    L 379 411 L 370 398 L 360 384 L 332 371 L 325 356 L 322 349
+                    L 296 299 L 290 290 L 242 284 L 263 270 L 251 254 L 286 221
+                    L 291 208 L 296 173 L 237 171 L 245 123 L 247 110 L 158 111
+                    L 151 159 L 94 172 L 89 218 L 120 218 L 117 264 L 122 330
+                    L 175 320 L 157 357 L 236 353 L 225 373 L 239 409 L 250 456
+                    L 174 456 L 200 521 L 146 556 L 158 570 L 207 573 L 242 582
+                    L 264 581 L 251 592 L 212 599 L 194 613 L 179 625 Z
+                    M 121 360 L 127 372 L 134 374 L 133 391 L 116 403 L 102 412
+                    L 96 404 L 36 394 L 51 350 L 82 341 L 101 336 Z"
+                    fill="#11161e" stroke="#3a4658" stroke-width="1.2" opacity="0.85"/>
 
                 <!-- City dots inserted by JS -->
                 <g id="dots"></g>
@@ -601,7 +589,7 @@
             <h3>FPGA / RTL / Digital Design</h3>
             <div class="skills">Xilinx UltraScale+ · Vivado · AWS F1 · VHDL · Verilog · SystemVerilog</div>
             <p class="desc">Defence is the largest single demand source (BAE/Leonardo/MBDA/Thales/Roke/QinetiQ &mdash; clearance-gated). IP houses Cambridge-centric. Quantum a fast-growing niche.</p>
-            <p class="top-emp"><strong>Top fits:</strong> Arm · AMD · MBDA Bolton · Thales Cheadle · Raytheon Manchester · BBC R&amp;D Salford · Synamedia Saltaire · Leonardo · BAE · Riverlane · Picocom</p>
+            <p class="top-emp"><strong>Top fits:</strong> Arm · AMD · MBDA Bolton · Thales Cheadle · Raytheon Manchester · BBC R&amp;D Salford · CommScope Saltaire · Leonardo · BAE · Riverlane · Picocom</p>
             <div class="links">
                 <a href="categories/03_fpga_rtl.md">Read writeup &rarr;</a>
                 <a href="#" data-cat-jump="2">Heatmap</a>
@@ -625,7 +613,7 @@
             <h3>DSP · Audio · Broadcast · Comms PHY</h3>
             <div class="skills">NumPy/MATLAB · DOCSIS · J.83 · DVB · MPEG · 5G/6G PHY · audio codecs</div>
             <p class="desc">Genuine Yorkshire/Lancs strength: Synamedia Saltaire (Pace lineage), AMS Neve Burnley, BBC R&amp;D Salford, Sky Leeds, Smith+Nephew Hull/York.</p>
-            <p class="top-emp"><strong>Top fits:</strong> Synamedia Saltaire · BBC R&amp;D Salford · AMS Neve · Sky Leeds · Sagentia · Cambridge Consultants · TTP · Cirrus Logic · XMOS · AccelerComm · Smith+Nephew</p>
+            <p class="top-emp"><strong>Top fits:</strong> Calrec Audio (Hebden Bridge) · CommScope Saltaire · BBC R&amp;D Salford · AMS Neve Burnley · Sky Leeds · Sagentia · Cambridge Consultants · TTP · Cirrus Logic · XMOS · AccelerComm · Smith+Nephew</p>
             <div class="links">
                 <a href="categories/05_dsp_audio_broadcast.md">Read writeup &rarr;</a>
                 <a href="#" data-cat-jump="4">Heatmap</a>
@@ -636,11 +624,22 @@
             <div class="cat-num">CATEGORY 06</div>
             <h3>Embedded Systems · Linux · Firmware</h3>
             <div class="skills">C/C++ · Linux kernel · Buildroot · Yocto · U-Boot · Petalinux · Cortex-A/M · Zynq</div>
-            <p class="desc">The highest-leverage category for a Leeds-based engineer: Codethink Manchester, Synamedia Saltaire, Sky Leeds, Arm Manchester/Sheffield, Smith+Nephew Hull, Saga Robotics York.</p>
-            <p class="top-emp"><strong>Top fits:</strong> Codethink · Synamedia · Sky Leeds · Arm · AMD Versal · Collabora · Foundries.io · Canonical · 2net Sheffield · ByteSnap · CMR Surgical · JLR SDV · Renishaw York</p>
+            <p class="desc">The highest-leverage category for a Leeds-based engineer: Codethink Manchester, CommScope Saltaire (ex-Pace), Sky Leeds, Arm Manchester/Sheffield, Smith+Nephew Hull, Saga Robotics York.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Codethink · CommScope Saltaire · Sky Leeds · Arm · AMD Versal · Collabora · Foundries.io · Canonical · 2net Sheffield · ByteSnap · CMR Surgical · JLR SDV · Renishaw York</p>
             <div class="links">
                 <a href="categories/06_embedded_linux.md">Read writeup &rarr;</a>
                 <a href="#" data-cat-jump="5">Heatmap</a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-num">CATEGORY 07</div>
+            <h3>Pure Remote &middot; International Employers</h3>
+            <div class="skills">UK-remote · US/EU AI labs hiring UK · open-source / foundation funded · async-first</div>
+            <p class="desc">Fully remote roles &mdash; UK-domiciled remote-first cos, US/EU AI labs that hire UK residents (often via EOR), and open-source-foundation engineering. Widens the field dramatically; senior-IC US salaries ~$140&ndash;250k base.</p>
+            <p class="top-emp"><strong>Top fits:</strong> Anthropic · Hugging Face · Mistral · Cohere · LangChain · Together AI · Modal · Cerebras · Groq · Tenstorrent · Canonical · Collabora · Foundries.io · Cloudflare · GitLab · Sourcegraph · Replicate</p>
+            <div class="links">
+                <a href="categories/07_remote_international.md">Read writeup &rarr;</a>
             </div>
         </div>
 
@@ -665,7 +664,8 @@
     <h2>Yorkshire &amp; Greater Manchester &mdash; the local picture</h2>
     <p>The single most under-rated finding from this research: the <strong>Yorkshire / Lancashire / Greater Manchester arc</strong> contains an unusually rich set of employers for a hybrid HW + DSP + embedded-Linux + AI profile, even though the absolute headcount is below the Cambridge / Bristol clusters. The list below is the realistic commutable + UK-remote candidate set.</p>
     <div class="focus-grid">
-        <div class="focus-card"><h4>Synamedia &mdash; Saltaire</h4><p>Direct Pace plc descendant; video headend, anti-piracy, CDN. Closest UK match to a DOCSIS/J.83/MPEG/DVB background. Embedded Linux STB engineering still in-house.</p><div class="meta">~25 min from Leeds</div></div>
+        <div class="focus-card"><h4>CommScope &mdash; Salts Mill, Saltaire</h4><p>The real successor at the Pace plc site (Pace &rarr; Arris 2016 &rarr; CommScope 2019). Set-top boxes, cable modems, Wi-Fi gateways, RDK middleware. Closest UK match to the DOCSIS / MPEG / DVB / 3DES PVR work Brendan did at Pace.</p><div class="meta">~25 min from Leeds &middot; <em>not</em> Synamedia</div></div>
+        <div class="focus-card"><h4>Calrec Audio &mdash; Hebden Bridge</h4><p>Iconic live-broadcast audio mixing consoles (Argo, Type R, Brio, Summa) and the new ImPulse1 ST2110 IP audio engine. Owned by Audiotonix. Hires DSP / FPGA / firmware engineers at Nutclough Mill.</p><div class="meta">~40 min from Leeds</div></div>
         <div class="focus-card"><h4>Codethink &mdash; Manchester</h4><p>UK's flagship upstream-Linux consultancy. Kernel, BSPs, Yocto, MISRA, AGL, CIP, ELISA. Hybrid Manchester or full remote. Bullseye for the embedded-Linux profile.</p><div class="meta">~1 h or remote</div></div>
         <div class="focus-card"><h4>Sky &mdash; Leeds Dock</h4><p>Sky Glass / Sky Stream platform team; RDK-B, Linux middleware, secure boot, ad-tech, OTT QoE. Largest single AI/data engineering employer in Yorkshire.</p><div class="meta">In Leeds</div></div>
         <div class="focus-card"><h4>Arm &mdash; Manchester &amp; Sheffield</h4><p>Manchester (~80&ndash;120 engineers, CPU verification, ISP, central engineering); Sheffield (~30&ndash;50 engineers, CPU design verification, opened 2021).</p><div class="meta">Manchester · Sheffield</div></div>
@@ -680,7 +680,7 @@
         <div class="focus-card"><h4>Smith+Nephew &mdash; Hull / York</h4><p>Surgical-robotics signal processing &amp; imaging; algorithm and embedded-Linux work in York.</p><div class="meta">~1 h&ndash;1 h 30</div></div>
         <div class="focus-card"><h4>Saga Robotics &mdash; York</h4><p>Thorvald agricultural robot &mdash; ROS on Linux, Zynq-class control. Direct Petalinux/UltraScale+ stack match.</p><div class="meta">~1 h</div></div>
         <div class="focus-card"><h4>Renishaw &mdash; York office</h4><p>Metrology, lots of Zynq-on-Linux opportunities.</p><div class="meta">~1 h</div></div>
-        <div class="focus-card"><h4>2net &amp; Imagination &mdash; Sheffield / Leeds</h4><p>2net (Sheffield) &mdash; pure embedded-Linux consultancy on the doorstep. Imagination Leeds &mdash; small but live legacy Pure/Ensigma site.</p><div class="meta">~30&ndash;40 min</div></div>
+        <div class="focus-card"><h4>2net &mdash; Sheffield</h4><p>Pure embedded-Linux consultancy on the doorstep. Small (~15 people) but a perfect technical fit for direct outreach. (Note: Imagination Tech does <em>not</em> have a Leeds office &mdash; their UK is Kings Langley + Cambridge.)</p><div class="meta">~40 min from Leeds</div></div>
         <div class="focus-card"><h4>Diodes Zetex &mdash; Oldham</h4><p>Discrete power IC, LED drivers, MOSFETs &mdash; geographically perfect, more IC-level than board-level (validate fit).</p><div class="meta">~1 h</div></div>
         <div class="focus-card"><h4>BJSS / Infinity Works (IBM) &mdash; Leeds &amp; Manchester</h4><p>Real GenAI client engagements rather than slideware; embedded/IoT delivery for clients. Hybrid offices in both Leeds and Manchester.</p><div class="meta">In Leeds</div></div>
         <div class="focus-card"><h4>Siemens DISW &mdash; Didsbury</h4><p>Mentor Embedded Linux legacy, automotive Capital, industrial.</p><div class="meta">~1 h</div></div>
@@ -694,7 +694,14 @@
     <p><strong>Heatmap scoring:</strong> regional concentration scores are subjective 0&ndash;10 ratings combining (a) number of distinct employers in the area, (b) typical role volume in April 2026, and (c) seniority/match to the profile. Scores are not employer counts &mdash; a city with three highly-relevant Staff-level employers may score higher than one with ten junior roles.</p>
     <p><strong>Posting volumes</strong> are order-of-magnitude estimates and fluctuate weekly. Many roles cross-syndicate between job boards, inflating naive totals.</p>
     <p><strong>Clearance:</strong> defence employers (BAE / Leonardo / MBDA / Thales / Roke / QinetiQ / Cobham Ultra / AWE) almost always require SC or DV clearance and UK nationality / 5&ndash;10 yr UK residency. Clearance processing is 6&ndash;12 weeks.</p>
-    <p><strong>What's deliberately excluded:</strong> generic Big-4 consultancy "AI" roles without engineering depth; recruiter agencies; companies with no UK engineering presence (Aleph Alpha, SambaNova, Tenstorrent at time of writing).</p>
+    <p><strong>What's deliberately excluded:</strong> generic Big-4 consultancy "AI" roles without engineering depth; recruiter agencies; companies with no UK engineering presence — though such companies that hire UK-remote (Tenstorrent, Cerebras, Groq, etc.) appear in <a href="categories/07_remote_international.md">Category 07: Remote &amp; International</a> instead.</p>
+    <h3>Corrections from earlier drafts</h3>
+    <p>Two factual errors from the initial research were corrected in revision 2 (May 2026):</p>
+    <ul style="color: var(--text-secondary); margin-left: 1.2rem; margin-bottom: 1rem; font-size: 0.93rem;">
+        <li><strong>Saltaire site:</strong> the actual occupant at Salts Mill (the old Pace plc site) is <strong>CommScope</strong> — Pace was acquired by Arris in 2016, then by CommScope in 2019. Earlier drafts wrongly attributed the site to <em>Synamedia</em> (a separate company at Staines-upon-Thames, formed from Cisco's Video Software Solutions, sold to Permira in 2018) or to <em>Reach plc</em> (the unrelated newspaper publisher of the Daily Mirror, Telegraph &amp; Argus, etc).</li>
+        <li><strong>Imagination Technologies has no Leeds office.</strong> Their UK presence is Kings Langley HQ + Cambridge.</li>
+    </ul>
+    <p>Calrec Audio (Hebden Bridge) — pro-broadcast audio mixing consoles — was added in revision 2 as an obvious and direct fit that the initial research missed.</p>
 </section>
 
 <footer>
@@ -741,7 +748,8 @@
         {name: 'Oldham', lat: 53.54, lon: -2.12, scores: [0, 0, 0, 6, 0, 0]},
         // Yorkshire
         {name: 'Leeds', lat: 53.8, lon: -1.55, scores: [6, 4, 4, 4, 7, 8]},
-        {name: 'Saltaire', lat: 53.84, lon: -1.79, scores: [0, 0, 4, 2, 9, 9]},
+        {name: 'Saltaire', lat: 53.84, lon: -1.79, scores: [0, 0, 4, 3, 7, 8]},
+        {name: 'Hebden Bridge', lat: 53.74, lon: -2.01, scores: [0, 0, 5, 4, 9, 6]},
         {name: 'Sheffield', lat: 53.4, lon: -1.5, scores: [3, 4, 4, 4, 3, 6]},
         {name: 'Hull', lat: 53.74, lon: -0.34, scores: [1, 0, 1, 4, 5, 7]},
         {name: 'York', lat: 53.96, lon: -1.08, scores: [1, 0, 1, 3, 5, 7]},
@@ -830,7 +838,7 @@
             dotsG.appendChild(dot);
 
             // labels for major cities
-            if (radiusBase >= 5 || ['Leeds','Saltaire','Manchester','Sheffield','York','Hull','Burnley','Stockport','Oldham','Bolton','Belfast','Cardiff','Cambridge','London','Bristol','Edinburgh','Glasgow','Newcastle','Birmingham','Oxford'].includes(c.name)) {
+            if (radiusBase >= 5 || ['Leeds','Saltaire','Hebden Bridge','Manchester','Sheffield','York','Hull','Burnley','Stockport','Oldham','Bolton','Belfast','Cardiff','Cambridge','London','Bristol','Edinburgh','Glasgow','Newcastle','Birmingham','Oxford'].includes(c.name)) {
                 const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
                 let dx = r + 5, dy = 4, anchor = 'start';
                 // labels for left-side cities go to left

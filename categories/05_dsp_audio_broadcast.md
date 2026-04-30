@@ -12,7 +12,9 @@ A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/
 
 | # | Employer | UK Site(s) | What they build |
 |---|---|---|---|
-| 1 | **Synamedia** | Saltaire (Yorkshire), Staines | Video headend, CDN, anti-piracy, DOCSIS-adjacent video delivery (Pace/NDS lineage) |
+| 1 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | The real successor at the Pace plc site &mdash; set-top boxes, cable modems, video gateways, RDK middleware. Closest UK match to the DOCSIS / J.83 / MPEG-2 / DVB / 3DES PVR work Brendan did at Pace. *Not Synamedia*, despite frequent confusion. |
+| 1b | **Calrec Audio** (Audiotonix) | **Hebden Bridge** (Nutclough Mill) | Live-broadcast audio mixing consoles since 1971 &mdash; Argo, Type R, Brio, Summa, ImPulse1 ST2110 IP audio. Iconic in pro broadcast (Premier League, Super Bowl, Eurovision). Has DSP, FPGA, firmware, and R&D project engineers in West Yorkshire. ~40 min from Leeds. |
+| 1c | **Synamedia** (ex-Cisco Video / NDS) | **Staines-upon-Thames** + global (no Yorkshire site) | Separate from CommScope/Pace despite confusion. Video headend, anti-piracy, OTT video delivery. Ex-Cisco Video Solutions (sold to Permira 2018), incorporates the former NDS Group. |
 | 2 | **BBC R&D** | Salford MediaCity, London (W12) | Audio codecs, video compression, immersive audio, IP studio, 5G broadcast |
 | 3 | **Sky** (Comcast) | Osterley, **Leeds**, Livingston | OTT video pipeline, set-top silicon, advanced advertising, audio personalisation |
 | 4 | **Cirrus Logic** (incl. Wolfson legacy) | Edinburgh, London | Smart-codec / boosted-amp / always-on voice silicon |
@@ -49,7 +51,7 @@ Honourable mentions hiring in April 2026: **Keysight (S. Queensferry / Winnersh)
 | Bristol / Bath | 8 | XMOS, Picocom Bath, Nokia Bristol, Graphcore-adjacent |
 | Edinburgh / C. Belt | 7 | Cirrus Logic, Leonardo, Linn (Glasgow), Keysight S. Queensferry |
 | Southampton / Solent | 6 | AccelerComm, Roke (Romsey), Audient |
-| **Yorkshire** | **6** | Synamedia Saltaire, Sky Leeds, BBC R&D Salford (border), Smith+Nephew Hull/York |
+| **Yorkshire** | **7** | **Calrec Audio (Hebden Bridge)**, **CommScope ex-Pace (Saltaire)**, Sky Leeds, BBC R&D Salford (border), Smith+Nephew Hull/York |
 | **Greater Manchester / Lancs** | **6** | BBC R&D Salford, AMS Neve Burnley, ITV Salford, Roke Manchester, dock10 |
 | Oxford / Thames | 5 | SSL Begbroke, Focusrite High Wycombe |
 | Kent / Sussex | 4 | KEF Maidstone, B&W Worthing, Thales Crawley |
@@ -59,7 +61,8 @@ Honourable mentions hiring in April 2026: **Keysight (S. Queensferry / Winnersh)
 
 This arc is genuinely strong and under-rated nationally:
 
-- **Synamedia, Saltaire** — direct successor lineage to Pace plc; teams still work on video processing, anti-piracy watermarking, and CDN — the closest UK match to a DOCSIS/J.83/MPEG-2/DVB/3DES PVR background. Worth a targeted approach even without a live posting.
+- **CommScope, Salts Mill / Saltaire** — the actual successor at the Pace plc site (Pace &rarr; Arris 2016 &rarr; CommScope 2019). Teams still work on set-top boxes, cable modems, Wi-Fi gateways &mdash; the closest UK match to a DOCSIS / J.83 / MPEG-2 / DVB / 3DES PVR background. Worth a targeted approach even without a live posting. (Synamedia is a *different* company, based in Staines, often confused.)
+- **Calrec Audio, Hebden Bridge** — iconic British pro-broadcast audio mixer manufacturer. Argo, Type R, Brio, Summa consoles plus the new ImPulse1 ST2110 IP audio engine. R&D engineers, DSP engineers, firmware engineers all hired into Nutclough Mill. ~40 min from Leeds and a perfect cultural fit for an audio-DSP MSc.
 - **Sky, Leeds** — growing tech hub (Leeds Dock); roles span ad-tech, video pipeline, OTT QoE — less core-DSP than Osterley but commutable.
 - **BBC R&D, MediaCityUK Salford** — audio codec, immersive sound (ADM, MPEG-H), 5G broadcast trials. Small team, very high-fit; periodic openings.
 - **AMS Neve, Burnley** — iconic pro-audio; small DSP/FPGA team building 88RS, Genesys, converters. Rare openings but a perfect cultural fit.
@@ -81,6 +84,8 @@ Net: 4–6 high-fit employers within ~60-min commute, plus another 8–10 within
 
 ## Sources
 
+- <https://careers.commscope.com/location/saltaire-jobs/8610/2635167-6269131-2638652/4>
+- <https://calrec.com/careers/>
 - <https://www.synamedia.com/careers/>
 - <https://www.bbc.co.uk/rd>
 - <https://careers.bbc.co.uk>

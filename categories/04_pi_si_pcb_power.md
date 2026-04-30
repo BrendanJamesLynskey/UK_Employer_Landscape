@@ -42,7 +42,10 @@ April 2026 hiring is moderate — strongest at **Arm, AMD, Graphcore, BAE/MBDA/L
 | 28 | **Cambridge Consultants / TTP / Sagentia / Plextek** | Cambridge / Melbourn / Hertford | Project-based HW (medical, IoT, defence) |
 | 29 | **PA Consulting** | Cambridge (Melbourn Tech Centre) | Cross-sector HW prototyping |
 | 30 | **Focusrite / SSL / dCS / KEF / B&W** | High Wycombe / Begbroke / Cambridge / Maidstone / Worthing | Pro audio, DACs, mixed-signal HW |
-| 31 | **Synamedia / Sky** | **Saltaire (Bradford)** / Osterley | Broadcast HW, set-top reference designs |
+| 31 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | Set-top boxes, cable modems, Wi-Fi gateways &mdash; the actual current occupant at the old Pace plc site (Pace &rarr; Arris 2016 &rarr; CommScope 2019). Some board-level HW work on home-networking equipment. [careers.commscope.com](https://careers.commscope.com/location/saltaire-jobs/8610/2635167-6269131-2638652/4) |
+| 32 | **Calrec Audio** (Audiotonix) | **Hebden Bridge** (Nutclough Mill) | Live-broadcast audio mixing consoles &mdash; Argo, Type R, Brio, Summa, ImPulse1 ST2110 IP audio engine. Some PCB / DSP-board hardware design alongside heavy DSP work. [calrec.com/careers](https://calrec.com/careers/) |
+| 33 | **Synamedia** (ex-Cisco Video / NDS) | **Staines-upon-Thames** + global | Often confused with Pace's Saltaire site, but Synamedia is a separate company &mdash; Cisco's Video Software Solutions sold to Permira (2018). HQ Staines, no Yorkshire HW office. [synamedia.com/careers](https://www.synamedia.com/careers/) |
+| 34 | **Reach plc** (publisher) | One Canada Square (London) + regional titles incl. Telegraph &amp; Argus Bradford | Listed for completeness only &mdash; *not* an SI/PI engineering employer. Reach is the UK national/regional newspaper publisher (Daily Mirror, Express, Telegraph &amp; Argus). Earlier draft confused them with the Pace successor at Saltaire; the real occupant is CommScope. [reachplc.com](https://www.reachplc.com/) |
 
 ## Regional Concentration
 
@@ -57,7 +60,7 @@ April 2026 hiring is moderate — strongest at **Arm, AMD, Graphcore, BAE/MBDA/L
 | **Hampshire/Surrey** (Romsey/Crawley/Basingstoke) | 500–800 | Roke, Thales, Spirent |
 | **Oxford / Abingdon / Malmesbury** | 600–900 | Oxford Instruments, Dyson, Salience, Lumai |
 | **Greater Manchester** | **300–500** | Thales Cheadle, Diodes Zetex Oldham, Arm Manchester, BAE Radway Green |
-| **Yorkshire** | **150–300** | Blaize Leeds, Arm Sheffield, Synamedia Saltaire, Reach Saltaire |
+| **Yorkshire** | **150–300** | Blaize Leeds, Arm Sheffield, **CommScope (ex-Pace) Salts Mill / Saltaire**, **Calrec Audio (Hebden Bridge)** |
 | **North-East** | 200–400 | Pragmatic Sedgefield, Nissan Sunderland, Filtronic Sedgefield |
 | **Wales** (Newport/Cardiff) | 200–400 | Vishay Newport, IQE, Spirent Cwmbran |
 | **Derby / Midlands** | 300–600 | Rolls-Royce, JLR Gaydon, Aptiv Leamington |
@@ -82,7 +85,7 @@ Honest picture:
 
 - **Leeds itself**: Blaize is the standout — small (~30 UK HW/SW), edge-AI accelerator boards, intermittent posting. Otherwise scientific/medical SMEs (Tracerco, Pivotal Labs) and university spin-outs. Real PI/SI vacancies usually 0–3.
 - **Sheffield**: Arm has a Manchester/Sheffield CPU verification + small HW group. AESSEAL, Gripple — limited board design. Sheffield Uni AMRC adjacent.
-- **Bradford / Saltaire**: Synamedia (ex-Cisco Video, ex-NDS, ex-Pace) has shrunk; mostly SW now, but board-bringup roles appear. Reach plc occupies the old Pace site.
+- **Bradford / Saltaire**: the Pace plc lineage at Salts Mill is now **CommScope** (Pace &rarr; Arris 2016 &rarr; CommScope 2019). Set-top / gateway / cable-modem engineering, mostly SW but with some board-level HW. *Synamedia* is a separate company at Staines &mdash; not at Saltaire, despite a common confusion. *Reach plc* (the newspaper publisher) is unrelated to the Pace site, listed here only because the original research confused the names.
 - **Greater Manchester**: **Thales Cheadle Heath** (avionics/RF HW — real PI/SI work, 2–5 roles typical), **Diodes Zetex Oldham** (analogue/power IC + eval boards), **BAE Radway Green** (defence munitions electronics), **Arm Manchester** (CPU). Siemens Manchester (industrial drives), Bruntwood-cluster startups.
 - **Realistic commuter radius from Leeds**: Manchester/Cheadle/Oldham (~1h), Sheffield (40 min), Sedgefield/Pragmatic (~1h45), Saltaire (~25 min). Hybrid 2–3 days on-site is workable.
 
@@ -93,7 +96,7 @@ Honest picture:
 - **Apple Cambridge** rarely posts HW roles publicly — usually via referral/recruiter.
 - **AMD Edinburgh** (ex-Xilinx) is the single best concentration of FPGA-board PI/SI work outside Cambridge.
 - **Diodes Zetex Oldham** is geographically perfect but mostly IC-level, not board-level — fit needs validation.
-- Synamedia/Saltaire and Reach are mostly software now — set expectations low.
+- The Saltaire site (Salts Mill) is **CommScope**, not Synamedia and not Reach plc. CommScope is mostly software now — set HW-engineering expectations low.
 
 ## Sources
 

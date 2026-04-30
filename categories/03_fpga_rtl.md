@@ -21,7 +21,7 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 | 9 | **General Dynamics UK / Mission Systems** | Hastings, Oakdale, Bristol | Bowman, Morpheus tactical comms |
 | 10 | **Cobham Ultra / TP Group** | Greenford, Cheltenham, Loudwater, Weymouth | Sonobuoys, crypto, ASW |
 | 11 | **Arm** | Cambridge, **Manchester**, **Sheffield**, Belfast | CPU/GPU/NPU RTL, verification |
-| 12 | **Imagination Technologies** | Kings Langley, **Leeds (legacy ex-Pure)** | GPU, AI accel, RISC-V SoC |
+| 12 | **Imagination Technologies** | Kings Langley HQ, Cambridge (no Leeds office &mdash; common misconception) | GPU, AI accel, RISC-V SoC |
 | 13 | **AMD (Xilinx)** | Cambridge, Edinburgh, Belfast | Adaptive SoC, Versal, EPYC verif |
 | 14 | **NVIDIA UK** (Mellanox / Bright) | Bristol, Cambridge | DPU/SmartNIC, AI infra RTL |
 | 15 | **Nokia / Nokia Bell Labs** | Cambridge, Bristol | 5G/6G PHY, optical |
@@ -32,7 +32,9 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 | 20 | **Riverlane** | Cambridge | Quantum error-decoder FPGA (Deltaflow) |
 | 21 | **Oxford Quantum Circuits / Quantum Motion** | Reading, London | Qubit control electronics |
 | 22 | **BBC R&D** | **Salford (MediaCity)**, London | UHD/IP video, AI broadcast |
-| 23 | **Synamedia** (ex-Cisco Video / ex-NDS) | Staines, **Saltaire (ex-Pace)** | Video headend, encoders |
+| 23 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | Set-top boxes, cable modems, Wi-Fi gateways &mdash; the actual current occupant at the old Pace site. Some FPGA work remains on home-networking platforms. |
+| 23b | **Synamedia** (ex-Cisco Video / NDS) | Staines-upon-Thames (no Yorkshire site) | Video headend, encoders &mdash; a *separate* company from CommScope/Pace, often confused. |
+| 23c | **Calrec Audio** (Audiotonix) | **Hebden Bridge** (Nutclough Mill) | Live-broadcast audio mixing console FPGA / DSP &mdash; Argo, Type R, ImPulse1 ST2110. |
 | 24 | **Sony Europe B2B / Professional Solutions** | Basingstoke, Pencoed | Broadcast cameras, IP video |
 | 25 | **XMOS** | Bristol | xcore audio/AIoT SoC |
 | 26 | **Cambridge Consultants / TTP / Sagentia / Plextek / PA** | Cambridge cluster | Consultancy — medical, IoT, industrial FPGA |
@@ -49,7 +51,7 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 | **Cheltenham / Malvern / Worcs** | 600 | ~35 | QinetiQ, Northrop, Raytheon, GCHQ-adjacent SMEs |
 | **Greater Manchester** | 350–450 | ~25 | BAE Warton-adjacent, MBDA Bolton, Raytheon Manchester, Arm Manchester, Thales Cheadle, Roke MCR, BBC R&D Salford |
 | **Sheffield / S. Yorks** | 80–120 | ~6–8 | Arm Sheffield, AESSEAL/specialist SMEs |
-| **Leeds / W. Yorks** | 100–150 | ~8–10 | Imagination Leeds (small), Synamedia Saltaire, Rockley/medical, defence SMEs |
+| **Leeds / W. Yorks** | 100–150 | ~8–10 | Blaize Leeds, **CommScope (ex-Pace) Saltaire**, **Calrec Audio (Hebden Bridge)**, Rockley/medical, defence SMEs |
 | **Reading / Thames Valley** | 500 | ~30 | Thales, Cisco, Microsoft, Rohde & Schwarz |
 | **Hampshire** (Romsey/Soton) | 400 | ~25 | Roke, AccelerComm, IBM Hursley |
 | **Rochester / Kent / Essex** | 500 | ~30 | BAE Rochester, Leonardo Basildon |
@@ -63,8 +65,8 @@ The UK FPGA/RTL/digital-design landscape in April 2026 is dominated by three pil
 - **Thales Cheadle Heath** (Stockport) — IFF and secure comms; FPGA/RTL roles 2–4 open at any time.
 - **Roke Manchester** (Spinningfields) — newer SIGINT satellite, ~30 engineers, mix of FPGA + AI.
 - **BBC R&D Salford** — 25–30 R&D engineers; occasional FPGA roles for live IP video / UHD; very high cultural fit given Pace/broadcast background.
-- **Synamedia Saltaire** — direct ex-Pace site; intermittent FPGA hiring for video pipeline work.
-- **Imagination Leeds** — small post-2020 footprint; occasional roles.
+- **CommScope at Salts Mill, Saltaire** — the actual successor to Pace plc (Pace &rarr; Arris &rarr; CommScope); intermittent FPGA hiring for video pipeline / home-networking work. *Synamedia is a separate company at Staines and has no Yorkshire site.*
+- **Calrec Audio, Hebden Bridge** — live-broadcast audio mixing consoles; FPGA / DSP work on the Argo / Type R / ImPulse1 platforms.
 
 Realistic verdict: **8–12 live FPGA roles** across Yorkshire+GM at any moment. The pragmatic strategy is **UK-remote southern primes** (BAE, Leonardo, MBDA Stevenage, AMD, Picocom, AccelerComm) plus the Bolton/Cheadle/Manchester cluster.
 
@@ -93,6 +95,8 @@ Realistic verdict: **8–12 live FPGA roles** across Yorkshire+GM at any moment.
 - <https://www.accelercomm.com/careers>
 - <https://www.riverlane.com/careers>
 - <https://www.bbc.co.uk/rd/jobs>
+- <https://careers.commscope.com/location/saltaire-jobs/8610/2635167-6269131-2638652/4>
+- <https://calrec.com/careers/>
 - <https://www.synamedia.com/careers/>
 - <https://careers.keysight.com/>
 - <https://careers.spirent.com/>
