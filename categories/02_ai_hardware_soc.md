@@ -1,10 +1,14 @@
 # Category 02 — AI Hardware / SoC / Accelerator Silicon
 
-> AI accelerator SoC · GPU/NPU silicon · IP cores · FPGA prototyping · system bring-up · FC-BGA · HBM/PCIe systems
+> AI accelerator SoC · GPU/NPU silicon · IP cores · FPGA prototyping · system bring-up · FC-BGA · HBM/PCIe systems · inference silicon
 
 ## Summary
 
-The UK is one of the densest concentrations of AI-silicon design talent outside the US, but it is heavily clustered: **Cambridge** alone hosts >10 chip-design employers; **Bristol** is the second pole (Graphcore, NVIDIA AI Tech Centre, XMOS, Axelera, Codasip); a long tail spreads to Edinburgh, Kings Langley, Reading/Bracknell, Manchester, Sheffield, Belfast and the defence axis (Stevenage/Filton/Chelmsford/Edinburgh). Following SoftBank's acquisition of Graphcore (June 2024), NVIDIA's 120k-GPU UK rollout, Apple's Cambridge expansion, Pragmatic's Durham fab, and Axelera's UK build-out, **2026 is a strong hiring year for HW-systems engineers** — particularly board / SI/PI / power-delivery and FPGA-prototyping skill-sets. Yorkshire/Greater Manchester remain thin for chip-level work; the strongest matches there are Arm Manchester/Sheffield, Siemens EDA emulation, and Blaize Leeds/Kings Langley.
+The UK is one of the densest concentrations of AI-silicon design talent outside the US, but it is heavily clustered: **Cambridge** alone hosts >10 chip-design employers; **Bristol** is the second pole (Graphcore, NVIDIA AI Tech Centre, XMOS, Axelera, Codasip, Fractile satellite); a long tail spreads to Edinburgh, Kings Langley, Reading/Bracknell, Manchester, Sheffield, Belfast and the defence axis (Stevenage/Filton/Chelmsford/Edinburgh). Following SoftBank's acquisition of Graphcore (June 2024), NVIDIA's 120k-GPU UK rollout, Apple's Cambridge expansion, Pragmatic's Durham fab, Axelera's UK build-out, and the new wave of UK-domiciled inference startups (**Fractile, Vaire Computing, Oriole Networks, Lumai, Salience Labs**), **2026 is a strong hiring year for HW-systems engineers** — particularly board / SI/PI / power-delivery and FPGA-prototyping skill-sets. Yorkshire/Greater Manchester remain thin for chip-level work; the strongest matches there are Arm Manchester/Sheffield, Siemens EDA emulation, and Blaize Leeds/Kings Langley.
+
+### The AI Inference Accelerator wave (UK + UK-remote)
+
+The post-2023 inference-accelerator boom has produced a fast-growing tier of dedicated companies (distinct from the GPU incumbents). UK-domiciled players are unusually well-funded for a country its size: **Fractile** (London + Bristol, ~£100M, 70 staff with 40-role hiring drive, ex-Intel CEO Pat Gelsinger backing, transformer-attention silicon), **Vaire Computing** (London, reversible-computing AI chips, Intel Ignite cohort), **Oriole Networks** (London, photonic networking for AI clusters, $35M raise, hiring FPGA / optical / silicon-photonics / HW engineers), **Lumai** (Oxford, free-space optical inference, $10M Series A, lens-based optical computer launched 2026), **Salience Labs** (Oxford, photonic switching / TFLN matrix multiply), **Axelera AI** (Bristol QTIC, 220+ staff, Metis AIPU + Metis M.2 Max, RISC-V dataflow + D-IMC), **Graphcore** (Bristol, SoftBank), **Blaize** (Leeds/KL), **Pragmatic** (Cambridge/Durham). Globally there is a much larger cohort of inference players (Tenstorrent, Cerebras, Groq, SambaNova, d-Matrix, Etched, MatX, FuriosaAI, Rebellions, Hailo, Mythic, Lightmatter, Recogni, Esperanto, Brainchip, Kneron, Syntiant, Innatera, GreenWaves) — most are US/Asia-headquartered but a significant fraction hire UK-remote engineers; see [Category 07](07_remote_international.md) for that view.
 
 ## Top UK Employers
 
@@ -22,12 +26,15 @@ The UK is one of the densest concentrations of AI-silicon design talent outside 
 | 10 | **Siemens EDA (Mentor)** | Newbury, Manchester | Veloce emulation HW, HyperLynx SI/PI, Calibre |
 | 11 | **Intel** | Swindon (Customer Engineering), London | Customer platform HW/SW, Habana Gaudi support |
 | 12 | **Blaize** *(current)* | Kings Langley, Leeds | Edge AI SoC (GSP); SoC + board design |
-| 13 | **Axelera AI** | Bristol (UK Silicon PD), plus EU | Edge AI inference accelerator (Metis); RISC-V + dataflow |
+| 13 | **Axelera AI** | Bristol (QTIC, Univ. of Bristol Temple Quarter Enterprise Campus), plus EU | Edge AI inference accelerator (Metis AIPU, Metis M.2 Max); RISC-V + dataflow + digital in-memory computing (D-IMC). 220+ staff incl. 49+ PhDs. April 2026 open Bristol roles: Verification Engineer, Processor Verification Engineer, Backend Compiler Engineer, Senior/Staff Applications Engineer (Embedded AI), Director of Engineering (AI Integrated Systems), Tech Sales DR EMEA. [axelera.ai/careers](https://axelera.ai/careers) |
+| 13a | **Fractile** | **London (HQ) + Bristol (new)** | UK-domiciled inference startup (memory-fused compute, transformer attention, claims 100x faster + 10x cheaper + 20x perf/W vs H100). £100M planned UK investment over 3 years. Bristol site for chip assembly + SW testing. Hiring **40 of 110** roles in 2026 across HW eng / silicon design / SW. Backed by Oxford Science Enterprises, Kindred Capital, NATO Innovation Fund, Pat Gelsinger. [fractile.ai](https://www.fractile.ai/) |
+| 13b | **Vaire Computing** | **London** | Reversible-computing AI chip moonshot — claims ~50% energy reduction. Intel Ignite cohort + UK ChipStart incubator. ~$9.5M raised. Small team, very early but high-impact if it works. [vaire.co](https://vaire.co/) |
+| 13c | **Oriole Networks** | **London** | Photonic networking for AI/ML clusters — light-only data movement, drastically lower energy. $35M raise. **Actively recruiting**: FPGA Network Engineers, Optical Engineers, Silicon Photonics Engineers, Systems & Network Architects, Hardware Engineers, Lab Technicians. Direct match for HW + FPGA + DSP. [careers.oriolenetworks.com](https://careers.oriolenetworks.com/) |
 | 14 | **XMOS** | Bristol | Generative SoCs (xcore); voice/audio + edge AI |
 | 15 | **Codasip** | Bristol, Cambridge | RISC-V cores incl. AI-extensions |
 | 16 | **Pragmatic Semiconductor** | Cambridge HQ, Durham (300mm flexible IC fab) | Flexible TFT ICs; FlexIC Gen3 mixed-signal for AI-IoT |
-| 17 | **Lumai** | Oxford | 3D free-space optical AI inference (Iris Nova / Iris server, Apr 2026 launch) |
-| 18 | **Salience Labs** | Oxford | Photonic PCIe accelerator (TFLN matrix multiply) |
+| 17 | **Lumai** | **Oxford** | 3D free-space optical AI inference (Iris Nova / Iris server, lens-based, launched 2026). Claims up to **50&times; AI performance, 90% less power** vs. silicon. Test-cluster rollout EOY 2026. [lumai.ai](https://lumai.ai/) |
+| 18 | **Salience Labs** | **Oxford** | Photonic PCIe / switching accelerator (TFLN matrix multiply); spun out of Oxford + Münster. Hiring openly. [careers.saliencelabs.ai](https://careers.saliencelabs.ai/) |
 | 19 | **Optalysys** | Leeds-area / Cambridge | Optical / FHE accelerator |
 | 20 | **Achronix** | Small UK FAE/sales | eFPGA + Speedster7t AI FPGA |
 | 21 | **Sondrel / Aion Silicon** | Reading/Theale | ASIC turnkey services (incl. AI ASICs) |
@@ -72,6 +79,39 @@ Greater Manchester is moderately better:
 
 For a Staff-level board / SI-PI / FPGA-proto profile, neither region offers a wide field — the realistic Yorkshire/GM strategy is (a) stay at Blaize Leeds, (b) Arm Manchester/Sheffield CPU-systems, or (c) UK-remote at Bristol/Cambridge employers (Graphcore, Axelera, AMD, NVIDIA, Cadence Livingston are all hybrid-friendly).
 
+## Global AI inference players (mostly UK-remote)
+
+Beyond the UK-domiciled list, the broader AI inference / accelerator landscape contains a long tail of well-funded specialist silicon companies. Most have no UK office, but many hire UK-remote senior IC engineers; see **[Category 07: Pure Remote / International](07_remote_international.md)** for the route-in detail.
+
+| Company | HQ | What they build | UK presence | UK-remote? |
+|---|---|---|---|---|
+| **Tenstorrent** | Toronto | RISC-V + Tensix AI accelerators (Wormhole, Blackhole, Quasar); open-source SW stack | None | Yes — actively hires UK-remote senior IC |
+| **Cerebras** | Sunnyvale | Wafer-scale (CS-2/CS-3) inference + training; recent $1B raise at $23B valuation, refiling for IPO | None confirmed | Yes — UK-remote senior IC |
+| **Groq** | Mountain View | LPU deterministic inference; recently subject of NVIDIA acquisition activity | None | Yes — UK-remote senior IC |
+| **SambaNova** | Palo Alto | RDU (reconfigurable dataflow unit); SambaNova Suite Cloud | Minimal | Selective UK-remote |
+| **d-Matrix** | Santa Clara | Corsair inference accelerator (digital in-memory) | None | Selective UK-remote |
+| **Etched** | San Francisco | Sohu — transformer-only ASIC; bet-the-architecture on attention | None | Selective UK-remote |
+| **MatX** | San Francisco | Inference silicon for frontier transformers | None | Selective UK-remote |
+| **Lightmatter** | Boston / Mountain View | Photonic interconnect (Passage) + photonic compute | None | Selective UK-remote |
+| **Recogni** | Mountain View | Auto + edge inference accelerator | None | Selective |
+| **Esperanto** | Mountain View | RISC-V many-core AI inference (ET-SoC-1) | None | Selective |
+| **NextSilicon** | Israel / NYC | Reconfigurable HPC + AI compute | None | Selective |
+| **FuriosaAI** | Seoul | RNGD NPU (mass production from Jan 2026) | None | Selective |
+| **Rebellions** | Seoul | NPU for LLM serving (Atom, Rebel) | None | Selective |
+| **Hailo** | Tel Aviv | Hailo-8 / Hailo-10H edge AI accelerator (Raspberry Pi AI Kit) | London sales/FAE | Yes — engineering UK-remote |
+| **Mythic** | Austin / Texas | Analog in-memory inference (post-restructure) | None | Selective |
+| **Brainchip** | Sydney / Laguna Hills | Akida neuromorphic NPU | None | Selective |
+| **Innatera** | Delft (NL) | Neuromorphic spiking sensor processor | EU-remote | EU-friendly |
+| **GreenWaves Tech** | Grenoble | GAP9 RISC-V + NE16 NPU for ULP edge AI | EU-remote | EU-friendly |
+| **Kneron** | San Diego / Taipei | Kneo edge NPU SoCs | None | Selective |
+| **Syntiant** | Irvine | Always-on voice + sensor NPU | None | Selective |
+| **Quadric** | Burlingame | Chimera GPNPU IP | None | Selective |
+| **Expedera** | Santa Clara | Origin Evolution edge NPU IP (2026 Edge AI Vision award) | None | Selective UK-remote |
+
+> **Untether AI** (Toronto) wound down operations in 2024 after financial difficulty — listed for historical completeness only.
+
+For Brendan: the unusual breadth of HW + FPGA + Power + DSP + agentic-AI background travels well into both **UK-resident inference startups** (Fractile / Vaire / Oriole / Lumai / Salience / Axelera / Blaize / Graphcore — strong direct route) and **US-remote senior IC roles** at HW-systems-level inference cos like Tenstorrent / Cerebras / Groq, where senior power-delivery / SI-PI / FPGA-prototyping / system-bring-up hires routinely come in via remote. The transformer-attention / memory-fused / photonic players are particularly receptive to candidates who can credibly bridge analog physics → digital accelerator → ML systems.
+
 ## Notes & Caveats
 
 - Headcounts and posting counts are LinkedIn/Glassdoor scrapes from late April 2026 and fluctuate weekly.
@@ -83,6 +123,26 @@ For a Staff-level board / SI-PI / FPGA-proto profile, neither region offers a wi
 
 ## Sources
 
+- <https://www.fractile.ai/>
+- <https://www.computerweekly.com/news/366638933/Fractile-expansion-demonstrates-UK-growth-opportunity>
+- <https://techfundingnews.com/fractile-100m-uk-ai-chip-investment-bristol/>
+- <https://tech.eu/2025/05/06/we-are-sprinting-towards-implementation-of-our-first-chip-says-uk-startup-in-ai-inference-race/>
+- <https://vaire.co/>
+- <https://fortune.com/2025/05/20/uk-startup-vaire-reversible-computing-chip-gpu-alternative-energy-savings-ai/>
+- <https://www.datacenterdynamics.com/en/analysis/vaire-computing-reversible-computing-semiconductor-chip/>
+- <https://oriolenetworks.com/>
+- <https://careers.oriolenetworks.com/>
+- <https://lumai.ai/>
+- <https://careers.saliencelabs.ai/>
+- <https://axelera.ai/careers>
+- <https://jobs.ashbyhq.com/axelera>
+- <https://www.bristol.ac.uk/temple-quarter-enterprise-campus/research-and-innovation/qtic/news/2023/axelera-joins-qtic.html>
+- <https://tenstorrent.com/careers>
+- <https://www.cerebras.ai/>
+- <https://groq.com/careers/>
+- <https://hailo.ai/>
+- <https://furiosa.ai/>
+- <https://rebellions.ai/>
 - <https://www.graphcore.ai/posts/graphcore-begins-hiring-drive-with-75-new-jobs>
 - <https://www.graphcore.ai/posts/graphcore-joins-softbank-group-to-build-next-generation-of-ai-compute>
 - <https://careers.arm.com/search-jobs>

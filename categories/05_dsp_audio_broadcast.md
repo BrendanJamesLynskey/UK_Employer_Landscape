@@ -4,9 +4,9 @@
 
 ## Summary
 
-The UK has unusually deep talent pools in DSP-adjacent engineering, clustered around five poles: **Cambridge** (silicon, comms PHY, scientific DSP), **Bristol/Bath** (audio silicon, baseband), **Edinburgh** (Cirrus Logic / mixed-signal audio), **London/Salford** (broadcast, BBC R&D, AI-audio), and a **Yorkshire–Lancashire arc** (Sky Leeds, Synamedia Saltaire, AMS Neve Burnley, BBC R&D Salford, Smith+Nephew Hull) that is directly relevant. Hiring in April 2026 is moderate: AI-audio (Speechmatics, ElevenLabs) and 5G/6G PHY (AccelerComm, Picocom, Nokia) are the most active; legacy broadcast vendors (Grass Valley, Synamedia) are flat-to-shrinking; defence DSP (BAE, Leonardo, Thales) is steadily hiring with security-clearance gates.
+The UK has unusually deep talent pools in DSP-adjacent engineering, clustered around five poles: **Cambridge** (silicon, comms PHY, scientific DSP), **Bristol/Bath** (audio silicon, baseband), **Edinburgh** (Cirrus Logic / mixed-signal audio), **London/Salford** (broadcast, BBC R&D, AI-audio), and a **Yorkshire–Lancashire arc** (Sky Leeds, **CommScope ex-Pace at Saltaire**, **Calrec Audio at Hebden Bridge**, AMS Neve Burnley, BBC R&D Salford, Smith+Nephew Hull) that is directly relevant. Hiring in April 2026 is moderate: AI-audio (Speechmatics, ElevenLabs) and 5G/6G PHY (AccelerComm, Picocom, Nokia) are the most active; legacy broadcast vendors (Grass Valley, Synamedia) are flat-to-shrinking; defence DSP (BAE, Leonardo, Thales) is steadily hiring with security-clearance gates.
 
-A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/J.83/DVB and audio standards is a near-perfect fit for the **consultancy belt** (Sagentia, Cambridge Consultants, TTP, Plextek, Roke) and for **Synamedia/Sky in Yorkshire**.
+A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/J.83/DVB and audio standards is a near-perfect fit for the **consultancy belt** (Sagentia, Cambridge Consultants, TTP, Plextek, Roke) and for the Yorkshire/Lancs arc (**Calrec, CommScope, Sky, BBC R&D, AMS Neve**).
 
 ## Top UK Employers
 

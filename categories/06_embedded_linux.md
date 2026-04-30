@@ -4,9 +4,9 @@
 
 ## Summary
 
-The UK has an unusually deep embedded-Linux / device-driver ecosystem for a country its size, anchored by (a) **Arm** and the Cambridge silicon cluster, (b) a **Manchester–Yorkshire corridor** of specialist consultancies and set-top-box engineering (Codethink, Synamedia, Sky), (c) a **defence/aerospace belt** (Bristol-Cheltenham-Stevenage-Edinburgh-Belfast), and (d) a fast-growing **automotive/robotics** tier (JLR, Wayve, Oxbotica, Dyson, Saga Robotics).
+The UK has an unusually deep embedded-Linux / device-driver ecosystem for a country its size, anchored by (a) **Arm** and the Cambridge silicon cluster, (b) a **Manchester–Yorkshire corridor** of specialist consultancies and set-top-box engineering (Codethink, **CommScope ex-Pace at Saltaire**, Sky Leeds), (c) a **defence/aerospace belt** (Bristol-Cheltenham-Stevenage-Edinburgh-Belfast), and (d) a fast-growing **automotive/robotics** tier (JLR, Wayve, Oxbotica, Dyson, Saga Robotics).
 
-For a Staff-level Zynq-UltraScale+ / Petalinux / Buildroot / kernel-driver engineer in Leeds, the strongest "geographic fit + technical fit" combination sits in **Greater Manchester** (Codethink, Arm Manchester, Siemens EDA), **West Yorkshire** (Synamedia Saltaire, Sky Leeds, BJSS), and **remote-friendly consultancies** (Collabora, Foundries.io, Witekio). Live April 2026 listings for "embedded Linux UK" sit in the **600–900** range across LinkedIn / Indeed / CW Jobs, with **~80–150** specifically calling out kernel / driver work.
+For a Staff-level Zynq-UltraScale+ / Petalinux / Buildroot / kernel-driver engineer in Leeds, the strongest "geographic fit + technical fit" combination sits in **Greater Manchester** (Codethink, Arm Manchester, Siemens EDA), **West Yorkshire** (CommScope Saltaire, Sky Leeds, Calrec Audio Hebden Bridge, BJSS), and **remote-friendly consultancies** (Collabora, Foundries.io, Witekio). Live April 2026 listings for "embedded Linux UK" sit in the **600–900** range across LinkedIn / Indeed / CW Jobs, with **~80–150** specifically calling out kernel / driver work.
 
 ## Top UK Employers
 
@@ -63,7 +63,7 @@ Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley —
 - Indeed UK "embedded software engineer": **~900**; "firmware engineer": **~480**
 - CW Jobs "embedded Linux": **~310**
 - Codethink careers page: ~6–8 open SW roles
-- Synamedia careers: ~4 Saltaire embedded roles
+- CommScope careers (Saltaire): ~3–6 embedded SW / video / Wi-Fi gateway roles at any time
 - AMD UK careers (Versal/Zynq SW): ~10 UK roles tagged Cambridge/Edinburgh
 - Arm careers UK kernel/firmware: ~25 roles
 
