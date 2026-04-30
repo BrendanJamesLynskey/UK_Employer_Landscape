@@ -42,19 +42,24 @@ The post-2023 inference-accelerator boom has produced a fast-growing tier of ded
 | 23 | **MediaTek** | Cambridge (Kingfisher Ho), Kent | Modem, Wi-Fi, AI SoC blocks |
 | 24 | **BAE / MBDA / Leonardo** | Filton, Stevenage, Chelmsford, Edinburgh, Rochester, Luton | FPGA/ASIC for radar, EW, missile seekers, Tempest avionics |
 | 25 | **Meta UK** | London (Kings Cross), Cambridge | MTIA chip programme (next-gen 2026/27); Arm AGI CPU lead customer |
+| 26 | **EnSilica** | **Cambridge Science Park** (new 2026 hub) + **Sheffield** + Bristol + Abingdon | Mixed-signal ASIC + mmWave/RF up to 175 GHz; UK Space Agency C-LEO programme. Cambridge hub opened 2026 with 6 engineers (4 PhDs); 4-centre UK footprint plus India/Brazil/Hungary. *Sheffield is local to Leeds* &mdash; ~40 min commute. [ensilica.com](https://www.ensilica.com/) |
+| 27 | **Filtronic** | **Cambridge Science Park** + **Sedgefield** | RF/mmWave components and subsystems for Space, Defence, Telecom, Critical Communications &mdash; advanced transceivers, power amplifiers, filters, custom solutions K-band&ndash;W-band up to 175 GHz. [filtronic.com](https://www.filtronic.com/) |
+| 28 | **Altium** | Cambridge Science Park (UK office) | Altium Designer PCB EDA tooling. Adjacent to chip design but PCB-tooling primary. [altium.com](https://www.altium.com/) |
+| 29 | **Emberion** | Cambridge Science Park | Graphene photonics; IR photodetectors; thermal sensors. Niche but world-leading. [emberion.com](https://www.emberion.com/) |
+| 30 | **Raspberry Pi** | Cambridge Science Park (HQ) | Pi 5 / Pico / AI Kit; in-house silicon (RP2040, RP2350); IPO'd 2024. Hires firmware, silicon, board engineers. [raspberrypi.com](https://www.raspberrypi.com/) |
 
 ## Regional Concentration
 
 | City / Area | Approx. AI-silicon employer count | Notable names | Live HW-systems / SI-PI / FPGA-proto postings |
 |---|---|---|---|
-| **Cambridge** | 12–15 | Arm HQ, AMD, Apple, NVIDIA, Qualcomm, Imagination, MediaTek, Pragmatic, Graphcore (sat.), Codasip, Synopsys, Renesas | 200+ HW/SoC; ~50 systems/board/PI |
+| **Cambridge** (Cambridge SP, Peterhouse TP, St John's IP, West Cambridge) | 18–22 | Arm HQ + Peterhouse, AMD (Cambridge SP), Apple, NVIDIA, Qualcomm, Imagination, MediaTek, Pragmatic (Cambridge SP), Graphcore (sat.), Codasip, Synopsys, Renesas (Bourne End nearby), **EnSilica (new 2026 Cambridge SP hub)**, **Filtronic (Cambridge SP)**, **Raspberry Pi (Cambridge SP HQ)**, **Emberion (Cambridge SP)**, Altium | 200+ HW/SoC; ~50 systems/board/PI |
 | **Bristol** | 7–9 | Graphcore HQ, NVIDIA AI Tech Centre, Axelera UK, XMOS, Imagination, Codasip | ~80–120; ~25 HW-systems |
 | **London** | 4–6 | Apple Battersea, NVIDIA, Meta, Graphcore (sat.), Arm sat., Flux Computing | ~40–60 |
 | **Edinburgh / Livingston** | 3–4 | Cadence Livingston, Synopsys Edinburgh, AMD Pensando, Codasip remote | ~30 |
 | **Reading / Bracknell / Newbury** | 4–5 | AMD Reading, Cadence Bracknell, Siemens EDA Newbury, Sondrel/Aion | ~25 |
 | **Kings Langley / Hertfordshire** | 2–3 | Imagination HQ, Blaize KL | ~15 |
 | **Manchester** | 3–4 | Arm Manchester, Siemens EDA, Imagination sat., AMD apprenticeships | ~15–20 |
-| **Sheffield** | 1–2 | Arm Sheffield (CPU verif & systems), Synopsys (small) | ~5–10 |
+| **Sheffield** | 2–3 | Arm Sheffield (CPU verif & systems), **EnSilica Sheffield** (mixed-signal IC), Synopsys (small) | ~10–15 |
 | **Leeds / Yorkshire** | 1–2 | Blaize Leeds, Optalysys (peripherally) | ~5 |
 | **Belfast** | 1 | Arm Belfast | <5 |
 | **Oxford** | 2–3 | Lumai, Salience Labs, plus academic spinouts | ~10 |
@@ -68,6 +73,7 @@ Yorkshire is thin for chip-level AI work. Headline employers:
 
 - **Blaize Leeds** — current employer; the only true AI-SoC design site in Yorkshire.
 - **Arm Sheffield** — small but growing CPU-verification/systems site.
+- **EnSilica Sheffield** — mixed-signal IC design centre; one of EnSilica's four UK hubs alongside Abingdon, Bristol and (new 2026) Cambridge Science Park. Direct match for analogue/digital boundary work; commutable from Leeds.
 - **Optalysys** (Leeds-area roots) — optical-FHE accelerator; small team.
 
 Greater Manchester is moderately better:
@@ -110,7 +116,7 @@ Beyond the UK-domiciled list, the broader AI inference / accelerator landscape c
 
 > **Untether AI** (Toronto) wound down operations in 2024 after financial difficulty — listed for historical completeness only.
 
-For Brendan: the unusual breadth of HW + FPGA + Power + DSP + agentic-AI background travels well into both **UK-resident inference startups** (Fractile / Vaire / Oriole / Lumai / Salience / Axelera / Blaize / Graphcore — strong direct route) and **US-remote senior IC roles** at HW-systems-level inference cos like Tenstorrent / Cerebras / Groq, where senior power-delivery / SI-PI / FPGA-prototyping / system-bring-up hires routinely come in via remote. The transformer-attention / memory-fused / photonic players are particularly receptive to candidates who can credibly bridge analog physics → digital accelerator → ML systems.
+For this profile: the unusual breadth of HW + FPGA + Power + DSP + agentic-AI background travels well into both **UK-resident inference startups** (Fractile / Vaire / Oriole / Lumai / Salience / Axelera / Blaize / Graphcore — strong direct route) and **US-remote senior IC roles** at HW-systems-level inference cos like Tenstorrent / Cerebras / Groq, where senior power-delivery / SI-PI / FPGA-prototyping / system-bring-up hires routinely come in via remote. The transformer-attention / memory-fused / photonic players are particularly receptive to candidates who can credibly bridge analog physics → digital accelerator → ML systems.
 
 ## Notes & Caveats
 

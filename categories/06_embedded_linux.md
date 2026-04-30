@@ -33,7 +33,7 @@ For a Staff-level Zynq-UltraScale+ / Petalinux / Buildroot / kernel-driver engin
 | 18 | **Roke Manor** | Romsey, Manchester | Defence/comms embedded, SDR, Yocto BSPs |
 | 19 | **QinetiQ** | Malvern, Farnborough | Embedded R&D, sensor systems |
 | 20 | **Renishaw** | Wotton-under-Edge, York | Metrology embedded, Linux on Zynq |
-| 21 | **Smith+Nephew** | Hull, York, Watford | Surgical robotics, embedded Linux/RTOS |
+| 21 | **Smith+Nephew** | **Hull** + new Melton facility ($100M+, under construction); Watford | Advanced Wound Management R&D Centre of Excellence — signal processing, imaging, chemistry, embedded Linux. *York site closed 2016.* |
 | 22 | **Siemens EDA / DISW** | Manchester (Didsbury), Cambridge | Embedded SW for industrial, Mentor Embedded Linux legacy |
 | 23 | **ByteSnap Design** | Birmingham, remote | Embedded Linux/Yocto consultancy, BSPs |
 | 24 | **Witekio (Avnet)** | Reading, remote | Linux/Android BSP consultancy |
@@ -55,7 +55,7 @@ Honourable mentions: **XMOS** (Bristol — voice DSP), **AMS Neve** (Burnley —
 | **South Yorkshire** (Sheffield) | **5** | **2net**, Arm Sheffield, McLaren Applied (close) |
 | West Midlands (Birmingham/Coventry) | 7 | ByteSnap, JLR Gaydon/Whitley, Siemens, Aston Martin |
 | Cheltenham / Malvern | 6 | QinetiQ, Cobham Ultra, GCHQ-adjacent, Spirent |
-| **Hull / York** | **5** | **Smith+Nephew**, **Saga Robotics**, Renishaw York |
+| **Hull / York** | **5** | **Smith+Nephew (Hull)**, **Saga Robotics (York)**, **Renishaw York** |
 
 ## Live job postings (April 2026 snapshot, indicative)
 
@@ -80,7 +80,7 @@ This corridor is the **highest-leverage** target set:
 - **2net (Sheffield)** — small but pure embedded-Linux consultancy on the doorstep; worth a direct approach even when no role is listed.
 - **BJSS / CDW (Leeds)** — increasingly does embedded/IoT delivery for clients.
 - **BBC R&D (Salford MediaCity)** — research-engineer roles around broadcast embedded, ATSC 3.0, AV1 hardware.
-- **Smith+Nephew (Hull/York)** — surgical robotics & advanced wound-care embedded.
+- **Smith+Nephew (Hull)** — Advanced Wound Management R&D Centre of Excellence; signal processing, embedded Linux. New $100M+ Melton (near Hull) facility under construction. *York site closed 2016 &mdash; previous drafts wrongly listed it as still active.*
 - **Saga Robotics (York)** — Thorvald agricultural robot, ROS on Linux, Zynq-class control.
 - **Renishaw (York)** — metrology, lots of Zynq-on-Linux opportunities.
 - **JLR Manchester SDV hub** (announced 2024, ramping 2025–26) — software-defined-vehicle Linux platform team.

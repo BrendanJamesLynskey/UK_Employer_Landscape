@@ -37,7 +37,7 @@ The realistic April 2026 picture: there are **~1,500–3,000 fully-remote UK-eli
 
 These pay above UK market rate and routinely hire UK-resident senior engineers (some via UK entity, some via EOR like Deel / Remote.com / Velocity Global).
 
-| Employer | HQ | UK presence | What | Notes for Brendan |
+| Employer | HQ | UK presence | What | Notes for this profile |
 |---|---|---|---|---|
 | **Anthropic** | San Francisco | London office | Claude frontier models, agentic Claude Code, MCP | Bullseye on MCP & agents — competition extreme |
 | **OpenAI** | San Francisco | London office | Frontier models, ChatGPT, Operator agent | Yes — small UK team, hires senior IC |

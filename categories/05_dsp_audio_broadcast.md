@@ -12,7 +12,7 @@ A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/
 
 | # | Employer | UK Site(s) | What they build |
 |---|---|---|---|
-| 1 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | The real successor at the Pace plc site &mdash; set-top boxes, cable modems, video gateways, RDK middleware. Closest UK match to the DOCSIS / J.83 / MPEG-2 / DVB / 3DES PVR work Brendan did at Pace. *Not Synamedia*, despite frequent confusion. |
+| 1 | **CommScope** (ex-Pace via Arris) | **Salts Mill, Saltaire** | The real successor at the Pace plc site &mdash; set-top boxes, cable modems, video gateways, RDK middleware. Closest UK match to a DOCSIS / J.83 / MPEG-2 / DVB / 3DES PVR background &mdash; the original Pace plc engineering domain. *Not Synamedia*, despite frequent confusion. |
 | 1b | **Calrec Audio** (Audiotonix) | **Hebden Bridge** (Nutclough Mill) | Live-broadcast audio mixing consoles since 1971 &mdash; Argo, Type R, Brio, Summa, ImPulse1 ST2110 IP audio. Iconic in pro broadcast (Premier League, Super Bowl, Eurovision). Has DSP, FPGA, firmware, and R&D project engineers in West Yorkshire. ~40 min from Leeds. |
 | 1c | **Synamedia** (ex-Cisco Video / NDS) | **Staines-upon-Thames** + global (no Yorkshire site) | Separate from CommScope/Pace despite confusion. Video headend, anti-piracy, OTT video delivery. Ex-Cisco Video Solutions (sold to Permira 2018), incorporates the former NDS Group. |
 | 2 | **BBC R&D** | Salford MediaCity, London (W12) | Audio codecs, video compression, immersive audio, IP studio, 5G broadcast |
@@ -38,7 +38,7 @@ A profile spanning FPGA DSP across geophysics/medical/broadcast/PHY plus DOCSIS/
 | 22 | **Leonardo UK** | Edinburgh, Luton, Basildon | Radar, EW, IRST |
 | 23 | **Thales UK** | Crawley, Templecombe, Reading | Sonar, radar, secure comms |
 | 24 | **Cobham Ultra (Sonar)** | Greenford, Cheltenham, Weymouth | Sonar DSP, ASW |
-| 25 | **Smith+Nephew** | **Hull, York**, Andover | Surgical robotics, imaging, signal conditioning |
+| 25 | **Smith+Nephew** | **Hull** + Melton (new, $100M+, under construction); Andover | Advanced Wound Management R&D Centre of Excellence — signal processing, imaging, chemistry. *York site closed 2016.* |
 
 Honourable mentions hiring in April 2026: **Keysight (S. Queensferry / Winnersh)** test-instrument DSP; **Spirent (Crawley/Paignton)** protocol+PHY test; **MaxLinear UK (Belfast/Cambridge)** broadband PHY; **u-blox UK (Reigate/Cambridge)** GNSS/cellular; **CMR Surgical (Cambridge)** robotic-surgery sensor fusion; **GE HealthCare (Amersham)** imaging; **dCS Audio (Cambridge)**, **Linn (Glasgow)**, **Meridian (Huntingdon)**, **Audient (Hants)**; **V-Nova (London)** video codecs; **Grass Valley UK** (Newbury, much-reduced); **Red Bee Media (Bracknell)** broadcast playout.
 
@@ -51,7 +51,7 @@ Honourable mentions hiring in April 2026: **Keysight (S. Queensferry / Winnersh)
 | Bristol / Bath | 8 | XMOS, Picocom Bath, Nokia Bristol, Graphcore-adjacent |
 | Edinburgh / C. Belt | 7 | Cirrus Logic, Leonardo, Linn (Glasgow), Keysight S. Queensferry |
 | Southampton / Solent | 6 | AccelerComm, Roke (Romsey), Audient |
-| **Yorkshire** | **7** | **Calrec Audio (Hebden Bridge)**, **CommScope ex-Pace (Saltaire)**, Sky Leeds, BBC R&D Salford (border), Smith+Nephew Hull/York |
+| **Yorkshire** | **7** | **Calrec Audio (Hebden Bridge)**, **CommScope ex-Pace (Saltaire)**, Sky Leeds, BBC R&D Salford (border), Smith+Nephew Hull, EnSilica Sheffield |
 | **Greater Manchester / Lancs** | **6** | BBC R&D Salford, AMS Neve Burnley, ITV Salford, Roke Manchester, dock10 |
 | Oxford / Thames | 5 | SSL Begbroke, Focusrite High Wycombe |
 | Kent / Sussex | 4 | KEF Maidstone, B&W Worthing, Thales Crawley |
@@ -66,7 +66,7 @@ This arc is genuinely strong and under-rated nationally:
 - **Sky, Leeds** — growing tech hub (Leeds Dock); roles span ad-tech, video pipeline, OTT QoE — less core-DSP than Osterley but commutable.
 - **BBC R&D, MediaCityUK Salford** — audio codec, immersive sound (ADM, MPEG-H), 5G broadcast trials. Small team, very high-fit; periodic openings.
 - **AMS Neve, Burnley** — iconic pro-audio; small DSP/FPGA team building 88RS, Genesys, converters. Rare openings but a perfect cultural fit.
-- **Smith+Nephew, Hull & York** — surgical-tech signal processing and imaging; algorithm work in York. Likely under-the-radar route in.
+- **Smith+Nephew, Hull** — Advanced Wound Management R&D Centre of Excellence; signal processing, imaging, chemistry. New $100M+ Melton facility under construction. *York site closed 2016.*
 - **Roke (Manchester satellite)** and **BAE Systems Manchester** — defence DSP, growing post-AUKUS Pillar-2.
 - **dock10 / ITV Studios Salford** — broadcast operations; engineering roles less DSP-heavy but adjacent.
 - Adjacent: **NPL North** (Huddersfield outpost via Univ. of Huddersfield acoustics group), **University of Salford acoustics**.

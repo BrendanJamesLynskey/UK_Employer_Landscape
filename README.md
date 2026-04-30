@@ -15,7 +15,7 @@ The landing page includes an **interactive UK heatmap** (city dots positioned by
 | # | Category | Top employers (excerpt) | Writeup |
 |---|---|---|---|
 | 01 | Agentic AI / LLM Engineering | Anthropic UK · Hugging Face · Mistral · Cohere · DeepMind · Wayve · Peak · AutoTrader · Sky Leeds · Faculty · Quantexa · Arm AI | [`categories/01_agentic_ai_llm.md`](categories/01_agentic_ai_llm.md) |
-| 02 | AI Hardware / SoC / Accelerator Silicon | Arm · AMD · NVIDIA · Apple Cambridge · Graphcore · Axelera · Fractile · Vaire · Oriole Networks · Lumai · Salience Labs · Blaize · Imagination · Pragmatic · Codasip · Cadence Livingston | [`categories/02_ai_hardware_soc.md`](categories/02_ai_hardware_soc.md) |
+| 02 | AI Hardware / SoC / Accelerator Silicon | Arm · AMD · NVIDIA · Apple Cambridge · Graphcore · Axelera · Fractile · Vaire · Oriole Networks · Lumai · Salience Labs · Blaize · Imagination · Pragmatic · Codasip · Cadence Livingston · **EnSilica (Cambridge SP + Sheffield)** · **Filtronic** · Raspberry Pi · Emberion · Altium | [`categories/02_ai_hardware_soc.md`](categories/02_ai_hardware_soc.md) |
 | 03 | FPGA / RTL / Digital Design | Arm · AMD · MBDA Bolton · Thales Cheadle · Raytheon Manchester · BBC R&D Salford · CommScope Saltaire · Calrec Hebden Bridge · Leonardo · BAE · Riverlane · Picocom | [`categories/03_fpga_rtl.md`](categories/03_fpga_rtl.md) |
 | 04 | High-Performance HW · PI · SI · Power | Arm · AMD · Graphcore · NVIDIA · Apple · Blaize · Pragmatic · Renishaw · Dyson · Keysight · MBDA Stevenage · Cambridge Consultants · TTP · PA | [`categories/04_pi_si_pcb_power.md`](categories/04_pi_si_pcb_power.md) |
 | 05 | DSP · Audio · Broadcast · Comms PHY | Calrec Hebden Bridge · CommScope Saltaire · BBC R&D Salford · AMS Neve · Sky Leeds · Sagentia · Cambridge Consultants · TTP · Cirrus Logic · XMOS · AccelerComm · Smith+Nephew | [`categories/05_dsp_audio_broadcast.md`](categories/05_dsp_audio_broadcast.md) |
@@ -60,7 +60,7 @@ Each category writeup contains: summary · top-employers table (15–30 rows wit
 (Distilled from all six writeups, weighted by Leeds location preference.)
 
 - **S-tier:** **CommScope (ex-Pace) Salts Mill, Saltaire** · **Calrec Audio (Hebden Bridge)** · Codethink (Manchester) · Sky Leeds · Arm Manchester/Sheffield · Blaize (current)
-- **A-tier:** BBC R&D Salford · Peak · AutoTrader · AMD ex-Xilinx (Cambridge/Edinburgh) · MBDA Bolton · Thales Cheadle Heath · Smith+Nephew (Hull/York) · Saga Robotics (York) · AMS Neve (Burnley)
+- **A-tier:** BBC R&D Salford · Peak · AutoTrader · AMD ex-Xilinx (Cambridge/Edinburgh) · MBDA Bolton · Thales Cheadle Heath · Smith+Nephew (Hull) · Saga Robotics (York) · AMS Neve (Burnley) · **EnSilica (Sheffield + Cambridge SP)** · **Filtronic (Cambridge SP + Sedgefield)**
 - **B-tier (UK-remote):** Hugging Face · Anthropic · Mistral · Cohere · LangChain · Together AI · Modal · Cerebras · Groq · Tenstorrent · Faculty AI · Quantexa · Cambridge Consultants / TTP / Sagentia / Plextek / PA · Renishaw (York) · 2net (Sheffield) · ByteSnap (Birmingham) · Witekio · Foundries.io · Collabora · Canonical · Cloudflare · Diodes Zetex (Oldham)
 
 ---
